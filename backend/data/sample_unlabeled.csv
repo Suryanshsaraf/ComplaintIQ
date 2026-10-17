@@ -1,0 +1,501 @@
+external_id,date_received,complaint_text,product,channel
+UPL-00001,2026-08-31,The support staff gave me conflicting information. The email thread has no reply from your side.,Smart Watch,Social Media
+UPL-00002,2026-08-31,The two factor authentication code is never delivered to my phone. I contacted you by chat before. I am totally annoyed about this.,Smartphone,Chat
+UPL-00003,2026-08-31,I was promised a full refund but only got store credit. Autopay took money from my bank account on the wrong date.,Streaming Subscription,Email
+UPL-00004,2026-08-31,Nobody has confirmed my return for the streaming subscription. I am not happy with how this was handled.,Streaming Subscription,Phone
+UPL-00005,2026-08-31,The price I was quoted for the smart speaker does not match what I was billed. My payment was made by visa card.,Smart Speaker,Chat
+UPL-00006,2026-08-31,The carrier marked my order as delivered but I never received it. The tracking page still says in transit. I have been a customer for 6 years. Could you check this as soon as possible?,Smartphone,App Store
+UPL-00007,2026-08-31,The laptop is defective and makes a loud buzzing noise. The finish is peeling off in places. I need this resolved before the weekend. I am really disappointed about this.,Laptop,Email
+UPL-00008,2026-08-31,"I cannot log in to my account, the password reset email never arrives. I am not happy with how this was handled.",Smart Speaker,Phone
+UPL-00009,2026-08-31,"I cannot connect my home router to the app, it keeps showing an error. I am furious and considering leaving.",Home Router,Phone
+UPL-00010,2026-08-31,I was told the order shipped but there is no tracking number.,Smartphone,Phone
+UPL-00011,2026-08-31,"I cannot log in to my account, the password reset email never arrives.",Streaming Subscription,Web Form
+UPL-00012,2026-08-31,The installation wizard stops at 40 percent with an error code. I am really angry about this.,Home Router,Web Form
+UPL-00013,2026-08-31,Someone changed my account details and I did not authorize it. I have been a customer for 4 years. Thanks to everyone for the friendly service.,Wireless Earbuds,Social Media
+UPL-00014,2026-08-31,Someone changed my account details and I did not authorize it. The verification link expired immediately. I am totally annoyed about this.,Smart Speaker,Social Media
+UPL-00015,2026-09-01,I was only refunded part of the amount I paid. The quality has gone downhill compared to my previous smart speaker. I have been a customer for 4 years. I am not happy with how this was handled.,Smart Speaker,Phone
+UPL-00016,2026-09-01,I was charged twice for my laptop this month. My payment was made by visa card. This is the second time this has happened.,Laptop,Web Form
+UPL-00017,2026-09-01,My profile data disappeared after I signed in. I cleared my browser cache without any change. Thanks to the team for the help so far.,Laptop,Email
+UPL-00018,2026-09-01,My smart speaker order has not arrived and the tracking has not updated in days. I paid extra for express shipping.,Smart Speaker,Social Media
+UPL-00019,2026-09-01,The support portal gives a timeout error when I submit a ticket. The return label you sent does not work so I cannot send back the home router. I already restarted the device twice. I contacted you by social media before. Very disappointed with this experience.,Home Router,Social Media
+UPL-00020,2026-09-01,Someone changed my account details and I did not authorize it. I cleared my browser cache without any change. I contacted you by email before. I am very frustrated about this.,Smart Speaker,Email
+UPL-00021,2026-09-01,The carrier marked my order as delivered but I never received it. The shipping address on the label looks correct. I am not happy with how this was handled.,Smartphone,Social Media
+UPL-00022,2026-09-01,Nobody replied to my emails for a week. It happened again yesterday. Thanks to the agent for the patience.,Smart Speaker,Web Form
+UPL-00023,2026-09-01,"I received a late payment penalty even though I paid on time. I contacted you by email before. Happy with the brand otherwise, thanks in advance.",Streaming Subscription,Email
+UPL-00024,2026-09-01,The price I was quoted for the laptop does not match what I was billed. The invoice number is printed on the second page.,Laptop,Chat
+UPL-00025,2026-09-01,The smartphone overheats and shuts down randomly.,Smartphone,Web Form
+UPL-00026,2026-09-01,I was only refunded part of the amount I paid.,Smartphone,Web Form
+UPL-00027,2026-09-01,The smart speaker is defective and makes a loud buzzing noise. I only used it a handful of times. I ordered this as a gift.,Smart Speaker,Web Form
+UPL-00028,2026-09-01,Autopay took money from my bank account on the wrong date. I am extremely angry about this.,Streaming Subscription,Email
+UPL-00029,2026-09-01,My loyalty points vanished from my account. The profile page loads but shows no data. I need this resolved before the weekend. Worst experience ever.,Smart Speaker,Web Form
+UPL-00030,2026-09-01,"I need help configuring the wifi setup on my home router. Terrible, I want this fixed immediately.",Home Router,Phone
+UPL-00031,2026-09-01,My monthly statement includes charges I do not recognize. I contacted you by phone before. This is unacceptable.,Laptop,Phone
+UPL-00032,2026-09-01,Autopay took money from my bank account on the wrong date. The invoice number is printed on the second page. I am extremely upset about this.,Streaming Subscription,Social Media
+UPL-00033,2026-09-01,I requested a refund for the defective streaming subscription and was denied.,Streaming Subscription,Email
+UPL-00034,2026-09-01,I need help configuring the wifi setup on my smartphone. It happened again yesterday.,Smartphone,Email
+UPL-00035,2026-09-01,The installation wizard stops at 40 percent with an error code. My loyalty points vanished from my account.,Wireless Earbuds,Web Form
+UPL-00036,2026-09-01,The troubleshooting steps from your guide did not fix the problem. I ordered this as a gift.,Laptop,Email
+UPL-00037,2026-09-01,The refund went to the wrong card. I am totally annoyed about this.,Streaming Subscription,Chat
+UPL-00038,2026-09-01,The app freezes on startup after the latest update. I tried reinstalling the application. I am extremely disappointed about this.,Fitness Tracker,Chat
+UPL-00039,2026-09-02,The support portal gives a timeout error when I submit a ticket. Your store was closed during the posted opening hours. I tried reinstalling the application. I have been a customer for 6 years. I am not happy with how this was handled.,Smartphone,Email
+UPL-00040,2026-09-02,Your store was closed during the posted opening hours. I have used the site on several different browsers.,Wireless Earbuds,Email
+UPL-00041,2026-09-02,The troubleshooting steps from your guide did not fix the problem. I have been a customer for 3 years. I am really fed up about this.,Home Router,Phone
+UPL-00042,2026-09-02,The app freezes on startup after the latest update. I tried reinstalling the application. I am totally annoyed about this.,Laptop,Phone
+UPL-00043,2026-09-02,The installation wizard stops at 40 percent with an error code. Could you check this soon?,Smart Speaker,Email
+UPL-00044,2026-09-02,My account shows the wrong subscription tier. I ordered this as a gift. Let me know what information you need.,Laptop,Chat
+UPL-00045,2026-09-02,I was overcharged on my last home router payment. I have been a customer for 3 years. I am very disappointed about this.,Home Router,Social Media
+UPL-00046,2026-09-02,The laptop overheats and shuts down randomly. There is visible damage near the edge. I have been a customer for 2 years. I am very annoyed about this.,Laptop,Email
+UPL-00047,2026-09-02,The material feels cheap and started falling apart. There is visible damage near the edge. I am absolutely upset about this.,Streaming Subscription,Social Media
+UPL-00048,2026-09-02,My credit card was charged after I cancelled my plan. The charge appeared on the billing page of my account.,Smartphone,Social Media
+UPL-00049,2026-09-02,The battery on my wireless earbuds drains within an hour. I only used it a handful of times. I contacted you by social media before. I am deeply annoyed about this.,Wireless Earbuds,Social Media
+UPL-00050,2026-09-02,My invoice shows an incorrect amount for the streaming subscription. I am not happy with how this was handled.,Streaming Subscription,Email
+UPL-00051,2026-09-02,The app freezes on startup after the latest update. The manual does not explain this situation. I need this resolved before the weekend.,Laptop,Chat
+UPL-00052,2026-09-02,I have been unable to pair the device over bluetooth. The manual does not explain this situation.,Wireless Earbuds,Phone
+UPL-00053,2026-09-02,My smart speaker order has not arrived and the tracking has not updated in days. Could you look into this this week?,Smart Speaker,App Store
+UPL-00054,2026-09-02,The carrier marked my order as delivered but I never received it. Could you look into this?,Smartphone,Social Media
+UPL-00055,2026-09-02,My monthly statement includes charges I do not recognize.,Home Router,Web Form
+UPL-00056,2026-09-02,My invoice shows an incorrect amount for the wireless earbuds. The amount differs from the confirmation email. I ordered this as a gift. Worst experience ever.,Wireless Earbuds,Chat
+UPL-00057,2026-09-02,The return label you sent does not work so I cannot send back the smartphone. This is a disgrace and a waste of my time.,Smartphone,Social Media
+UPL-00058,2026-09-02,The two factor authentication code is never delivered to my phone. The profile page loads but shows no data. I am not happy with how this was handled.,Laptop,Email
+UPL-00059,2026-09-02,The sync between my devices keeps failing. I already restarted the device twice. I ordered this as a gift.,Wireless Earbuds,App Store
+UPL-00060,2026-09-02,The package was delivered to the wrong address. The tracking page still says in transit. I am totally fed up about this.,Smart Speaker,Social Media
+UPL-00061,2026-09-02,I was only refunded part of the amount I paid. Could you investigate this this week?,Home Router,Phone
+UPL-00062,2026-09-02,Items from my wireless earbuds order were missing from the shipment.,Wireless Earbuds,Chat
+UPL-00063,2026-09-02,The software crashes every time I open the settings page. The carrier marked my order as delivered but I never received it. The status light keeps blinking orange. This is a disgrace and a waste of my time.,Smart Speaker,Phone
+UPL-00064,2026-09-02,The software crashes every time I open the settings page. It happened again yesterday. Thank you for the quick help so far.,Laptop,Phone
+UPL-00065,2026-09-03,My loyalty points vanished from my account. Could you check this this week?,Laptop,Email
+UPL-00066,2026-09-03,I have been unable to pair the device over bluetooth.,Smartphone,Social Media
+UPL-00067,2026-09-03,No one called me back as promised. I need this resolved before the weekend.,Fitness Tracker,Web Form
+UPL-00068,2026-09-03,My credit card was charged after I cancelled my plan. Thanks to everyone for the help so far.,Streaming Subscription,Phone
+UPL-00069,2026-09-03,The refund went to the wrong card. The bank shows no pending credit.,Wireless Earbuds,App Store
+UPL-00070,2026-09-03,The support staff gave me conflicting information. Each agent asked me the same questions again. Thanks to your staff for the help so far.,Wireless Earbuds,Phone
+UPL-00071,2026-09-03,The app freezes on startup after the latest update. I need this resolved before the weekend. Kindly let me know how to proceed.,Streaming Subscription,Email
+UPL-00072,2026-09-03,Delivery was supposed to take 3 days but it has been two weeks. A neighbour said no courier had visited the street. I am deeply angry about this.,Wireless Earbuds,Social Media
+UPL-00073,2026-09-03,I was transferred between three departments and had to repeat myself every time.,Home Router,Chat
+UPL-00074,2026-09-03,The wireless earbuds overheats and shuts down randomly. The warranty card is still in the box.,Wireless Earbuds,Web Form
+UPL-00075,2026-09-03,The battery on my streaming subscription drains within an hour. There is visible damage near the edge.,Streaming Subscription,Email
+UPL-00076,2026-09-03,"I returned the streaming subscription three weeks ago and still have not received my refund. The agent I spoke to was rude and dismissive. Great service overall, I just need this resolved.",Streaming Subscription,Web Form
+UPL-00077,2026-09-03,The agent I spoke to was rude and dismissive. I was given a reference number but nobody uses it. I need this resolved before the weekend.,Fitness Tracker,App Store
+UPL-00078,2026-09-03,The sync between my devices keeps failing.,Smart Watch,Email
+UPL-00079,2026-09-03,Delivery was supposed to take 3 days but it has been two weeks.,Laptop,Web Form
+UPL-00080,2026-09-03,My home router order has not arrived and the tracking has not updated in days. I am extremely frustrated.,Home Router,Phone
+UPL-00081,2026-09-03,The stitching came loose on first use. I only used it a handful of times.,Home Router,Social Media
+UPL-00082,2026-09-04,My wireless earbuds order has not arrived and the tracking has not updated in days. I paid extra for express shipping.,Wireless Earbuds,Social Media
+UPL-00083,2026-09-04,"My invoice shows an incorrect amount for the streaming subscription. Happy with the brand otherwise, thanks in advance.",Streaming Subscription,App Store
+UPL-00084,2026-09-04,I have been unable to pair the device over bluetooth. The error code displayed is unclear.,Smart Speaker,Chat
+UPL-00085,2026-09-04,I could not find the product information I was looking for. It happened again yesterday.,Laptop,Email
+UPL-00086,2026-09-04,Items from my laptop order were missing from the shipment. A neighbour said no courier had visited the street.,Laptop,Web Form
+UPL-00087,2026-09-04,The price I was quoted for the streaming subscription does not match what I was billed. I am totally angry about this.,Streaming Subscription,Chat
+UPL-00088,2026-09-04,The home router overheats and shuts down randomly. I need this resolved before the weekend. I am not happy with how this was handled.,Home Router,Phone
+UPL-00089,2026-09-04,I was promised a full refund but only got store credit. The return confirmation email arrived last month. I ordered this as a gift. I am totally disappointed about this.,Fitness Tracker,Social Media
+UPL-00090,2026-09-04,My home router order has not arrived and the tracking has not updated in days. The shipping address on the label looks correct. This is unacceptable.,Home Router,Email
+UPL-00091,2026-09-04,"My credit card was charged after I cancelled my plan. I cannot log in to my account, the password reset email never arrives. This is unacceptable.",Laptop,Phone
+UPL-00092,2026-09-04,Delivery was supposed to take 3 days but it has been two weeks. This is the second time this has happened. Worst experience ever.,Streaming Subscription,Phone
+UPL-00093,2026-09-04,"I cannot connect my home router to the app, it keeps showing an error. The website layout is confusing and hard to navigate. I already restarted the device twice. Not bad service so far, thanks.",Home Router,Web Form
+UPL-00094,2026-09-04,The laptop overheats and shuts down randomly. I only used it a handful of times. I contacted you by phone before. I am totally disappointed about this.,Laptop,Phone
+UPL-00095,2026-09-04,The two factor authentication code is never delivered to my phone. The verification link expired immediately. I have been a customer for 6 years. Very disappointed with this experience.,Smart Watch,Phone
+UPL-00096,2026-09-04,"I was only refunded part of the amount I paid. The return confirmation email arrived last month. It happened again yesterday. Not bad service so far, thanks.",Home Router,Email
+UPL-00097,2026-09-04,The mobile site is slow on my phone. I have used the site on several different browsers.,Streaming Subscription,Phone
+UPL-00098,2026-09-04,Refund processing is taking much longer than the stated five business days. I kept the receipt and the original packaging. I have been a customer for 2 years. I am absolutely disappointed about this.,Home Router,Social Media
+UPL-00099,2026-09-04,The carrier marked my order as delivered but I never received it. I need this resolved before the weekend. Reporting this for your records.,Smartphone,Phone
+UPL-00100,2026-09-04,"The quality has gone downhill compared to my previous smart watch. I only used it a handful of times. I ordered this as a gift. Terrible, I want this fixed immediately.",Smart Watch,Email
+UPL-00101,2026-09-04,The courier left my smartphone outside in the rain and it got damaged. A neighbour said no courier had visited the street. I ordered this as a gift. Reporting this for your records.,Smartphone,Phone
+UPL-00102,2026-09-04,The support portal gives a timeout error when I submit a ticket. The status light keeps blinking orange. I am very fed up about this.,Wireless Earbuds,Social Media
+UPL-00103,2026-09-05,Your store was closed during the posted opening hours. Very disappointed with this experience.,Laptop,Social Media
+UPL-00104,2026-09-05,The material feels cheap and started falling apart. The finish is peeling off in places.,Smart Watch,Web Form
+UPL-00105,2026-09-05,"I cannot log in to my account, the password reset email never arrives. I need this resolved before the weekend. Could you review this as soon as possible?",Streaming Subscription,Phone
+UPL-00106,2026-09-05,Delivery was supposed to take 3 days but it has been two weeks. The shipping address on the label looks correct. I have been a customer for 1 years. Let me know what information you need.,Laptop,Email
+UPL-00107,2026-09-05,The wireless earbuds overheats and shuts down randomly.,Wireless Earbuds,Phone
+UPL-00108,2026-09-05,I have been on hold for over an hour with no answer. The call lasted nearly forty minutes. This is the second time this has happened.,Smartphone,Phone
+UPL-00109,2026-09-05,My loyalty points vanished from my account. Thanks to your staff for the quick reply.,Smartphone,Email
+UPL-00110,2026-09-05,I need help configuring the wifi setup on my streaming subscription. This is unacceptable.,Streaming Subscription,Chat
+UPL-00111,2026-09-05,The troubleshooting steps from your guide did not fix the problem. The manual does not explain this situation.,Home Router,Social Media
+UPL-00112,2026-09-05,The app freezes on startup after the latest update. I tried reinstalling the application. I have been a customer for 3 years. Thanks to the team for the quick reply.,Smartphone,Web Form
+UPL-00113,2026-09-05,I was transferred between three departments and had to repeat myself every time. This is the second time this has happened. I am deeply annoyed about this.,Home Router,Social Media
+UPL-00114,2026-09-05,My refund was approved but the money never reached my account. The return was posted over two weeks ago. Very disappointed with this experience.,Wireless Earbuds,Social Media
+UPL-00115,2026-09-05,The tax on my invoice looks wrong.,Smartphone,Social Media
+UPL-00116,2026-09-05,I was charged twice for my streaming subscription this month. The invoice number is printed on the second page.,Streaming Subscription,Email
+UPL-00117,2026-09-06,My invoice shows an incorrect amount for the streaming subscription. I ordered this as a gift. I am deeply frustrated about this.,Streaming Subscription,Social Media
+UPL-00118,2026-09-06,"I was only refunded part of the amount I paid. I kept the receipt and the original packaging. Happy with the brand otherwise, thanks in advance.",Smartphone,Social Media
+UPL-00119,2026-09-06,My monthly statement includes charges I do not recognize. This is unacceptable.,Wireless Earbuds,Web Form
+UPL-00120,2026-09-06,"The smart watch stopped working after just two weeks. This is the second time this has happened. No complaints about the staff, they were lovely.",Smart Watch,Chat
+UPL-00121,2026-09-06,The carrier marked my order as delivered but I never received it. The shipping address on the label looks correct. I am totally fed up about this.,Smart Speaker,Social Media
+UPL-00122,2026-09-06,The store employee ignored me when I asked for help with the smart watch. I was given a reference number but nobody uses it. I have been a customer for 1 years. I am deeply angry about this.,Smart Watch,Chat
+UPL-00123,2026-09-06,My profile data disappeared after I signed in. The verification link expired immediately. I am deeply upset about this.,Smart Speaker,Social Media
+UPL-00124,2026-09-06,"The stitching came loose on first use. There is visible damage near the edge. I ordered this as a gift. Terrible, I want this fixed immediately.",Wireless Earbuds,Social Media
+UPL-00125,2026-09-06,The color looks nothing like the pictures and the build is flimsy. I need this resolved before the weekend. Could you look into this today?,Home Router,Email
+UPL-00126,2026-09-06,The refund went to the wrong card. The return was posted over two weeks ago. I am deeply fed up about this.,Fitness Tracker,Chat
+UPL-00127,2026-09-06,Your representative promised a follow up that never happened. The email thread has no reply from your side. I am not happy with how this was handled.,Smartphone,Phone
+UPL-00128,2026-09-06,"The support portal gives a timeout error when I submit a ticket. I contacted you by social media before. Terrible, I want this fixed immediately.",Home Router,Social Media
+UPL-00129,2026-09-06,The package was delivered to the wrong address. A neighbour said no courier had visited the street. It happened again yesterday. I am totally disappointed about this.,Smartphone,Social Media
+UPL-00130,2026-09-06,I was told the order shipped but there is no tracking number. I paid extra for express shipping. I need this resolved before the weekend.,Streaming Subscription,Phone
+UPL-00131,2026-09-06,"I was unable to update my email address on my profile. The profile page loads but shows no data. Terrible, I want this fixed immediately.",Home Router,Social Media
+UPL-00132,2026-09-06,The sync between my devices keeps failing. I tried reinstalling the application. Very disappointed with this experience.,Laptop,Social Media
+UPL-00133,2026-09-06,"The package was delivered to the wrong address. The tracking page still says in transit. Terrible, I want this fixed immediately.",Smart Watch,Chat
+UPL-00134,2026-09-07,Your representative promised a follow up that never happened.,Fitness Tracker,Web Form
+UPL-00135,2026-09-07,The color looks nothing like the pictures and the build is flimsy. The finish is peeling off in places. I am absolutely angry about this.,Smart Speaker,Web Form
+UPL-00136,2026-09-07,Your representative promised a follow up that never happened.,Streaming Subscription,Phone
+UPL-00137,2026-09-07,"Items from my laptop order were missing from the shipment. I have been a customer for 8 years. Happy with the brand otherwise, thanks in advance.",Laptop,Email
+UPL-00138,2026-09-07,I was overcharged on my last smart watch payment. It happened again yesterday.,Smart Watch,Phone
+UPL-00139,2026-09-07,The delivery driver never showed up for my scheduled slot. The shipping address on the label looks correct. I have been a customer for 1 years. Could you check this as soon as possible?,Smart Speaker,Phone
+UPL-00140,2026-09-07,The carrier marked my order as delivered but I never received it. The fitness tracker is defective and makes a loud buzzing noise.,Fitness Tracker,Email
+UPL-00141,2026-09-07,The price I was quoted for the streaming subscription does not match what I was billed. The amount differs from the confirmation email. I have been a customer for 1 years.,Streaming Subscription,Chat
+UPL-00142,2026-09-07,The tax on my invoice looks wrong. The invoice number is printed on the second page. I am deeply annoyed about this.,Wireless Earbuds,Email
+UPL-00143,2026-09-07,The stitching came loose on first use. I only used it a handful of times.,Smart Speaker,Web Form
+UPL-00144,2026-09-07,The app freezes on startup after the latest update. I could not find the product information I was looking for. The error code displayed is unclear.,Smartphone,Social Media
+UPL-00145,2026-09-07,The material feels cheap and started falling apart. There is visible damage near the edge. I am extremely disappointed about this.,Smart Speaker,Chat
+UPL-00146,2026-09-07,The battery on my wireless earbuds drains within an hour. There is visible damage near the edge. I am totally frustrated about this.,Wireless Earbuds,Email
+UPL-00147,2026-09-07,"I cancelled within the trial period but you refuse to refund me. Terrible, I want this fixed immediately.",Laptop,Social Media
+UPL-00148,2026-09-07,I was promised a full refund but only got store credit. The return confirmation email arrived last month.,Streaming Subscription,App Store
+UPL-00149,2026-09-07,"I cannot connect my wireless earbuds to the app, it keeps showing an error. I tried reinstalling the application. Could you check this this week?",Wireless Earbuds,Web Form
+UPL-00150,2026-09-07,My monthly statement includes charges I do not recognize. My payment was made by visa card. I have been a customer for 4 years. Worst experience ever.,Smartphone,Phone
+UPL-00151,2026-09-07,The wireless earbuds is defective and makes a loud buzzing noise. There is visible damage near the edge. Kindly let me know how to proceed.,Wireless Earbuds,Chat
+UPL-00152,2026-09-07,I keep getting logged out of my account every few minutes. The profile page loads but shows no data. I am extremely frustrated about this.,Home Router,Phone
+UPL-00153,2026-09-07,Someone changed my account details and I did not authorize it. The profile page loads but shows no data. Thanks to the agent for the quick reply.,Smart Speaker,Social Media
+UPL-00154,2026-09-07,The software crashes every time I open the settings page. I am furious and considering leaving.,Wireless Earbuds,Social Media
+UPL-00155,2026-09-07,My account shows the wrong subscription tier. My username is no longer recognised. I contacted you by email before. I am deeply frustrated about this.,Streaming Subscription,Email
+UPL-00156,2026-09-07,"I was charged twice for my home router this month. The amount differs from the confirmation email. It happened again yesterday. Great service overall, I just need this resolved.",Home Router,Web Form
+UPL-00157,2026-09-07,The stitching came loose on first use. The finish is peeling off in places. I am absolutely annoyed about this.,Home Router,Email
+UPL-00158,2026-09-07,I was charged twice for my streaming subscription this month. I keep getting logged out of my account every few minutes. The amount differs from the confirmation email. I have been a customer for 7 years. I am totally annoyed about this.,Streaming Subscription,Chat
+UPL-00159,2026-09-07,The stitching came loose on first use. My previous model lasted for years. I contacted you by phone before. Could you check this soon?,Home Router,Phone
+UPL-00160,2026-09-07,My parcel arrived with the box crushed. I keep getting logged out of my account every few minutes.,Fitness Tracker,Email
+UPL-00161,2026-09-07,The quality has gone downhill compared to my previous smart speaker. Could you look into this today?,Smart Speaker,Social Media
+UPL-00162,2026-09-08,I cancelled within the trial period but you refuse to refund me. The packaging uses too much plastic.,Smartphone,Email
+UPL-00163,2026-09-08,The courier left my home router outside in the rain and it got damaged. A neighbour said no courier had visited the street.,Home Router,Email
+UPL-00164,2026-09-08,The store employee ignored me when I asked for help with the fitness tracker. I am deeply angry about this.,Fitness Tracker,Social Media
+UPL-00165,2026-09-08,The software crashes every time I open the settings page. I received a late payment penalty even though I paid on time.,Home Router,Social Media
+UPL-00166,2026-09-08,The troubleshooting steps from your guide did not fix the problem. The manual does not explain this situation. I am deeply disappointed about this.,Streaming Subscription,Social Media
+UPL-00167,2026-09-08,Parts of the smart watch were broken out of the box. The warranty card is still in the box. This is a disgrace and a waste of my time.,Smart Watch,Social Media
+UPL-00168,2026-09-08,The tax on my invoice looks wrong. The charge appeared on the billing page of my account. Worst experience ever.,Wireless Earbuds,Web Form
+UPL-00169,2026-09-08,The package was delivered to the wrong address. I have been on hold for over an hour with no answer. Could you investigate this today?,Smart Watch,Social Media
+UPL-00170,2026-09-08,The chat representative closed the conversation without solving anything. I was given a reference number but nobody uses it. I am not satisfied at all.,Home Router,Email
+UPL-00171,2026-09-08,"The price I was quoted for the streaming subscription does not match what I was billed. My payment was made by visa card. I ordered this as a gift. Terrible, I want this fixed immediately.",Streaming Subscription,Chat
+UPL-00172,2026-09-08,Your store was closed during the posted opening hours. I have been a customer for 7 years.,Home Router,Phone
+UPL-00173,2026-09-08,The courier left my home router outside in the rain and it got damaged. My loyalty points vanished from my account. The tracking page still says in transit.,Home Router,Email
+UPL-00174,2026-09-08,I was charged twice for my smartphone this month. My payment was made by visa card. Could you look into this this week?,Smartphone,Phone
+UPL-00175,2026-09-08,The app freezes on startup after the latest update. I need this resolved before the weekend. I would like an update.,Fitness Tracker,Phone
+UPL-00176,2026-09-08,The streaming subscription arrived with a cracked screen and scratches. There is visible damage near the edge. This is unacceptable.,Streaming Subscription,App Store
+UPL-00177,2026-09-08,The carrier marked my order as delivered but I never received it. Could you look into this as soon as possible?,Smart Speaker,Web Form
+UPL-00178,2026-09-08,The agent I spoke to was rude and dismissive.,Smart Speaker,App Store
+UPL-00179,2026-09-08,My fitness tracker order has not arrived and the tracking has not updated in days. I am totally upset about this.,Fitness Tracker,Email
+UPL-00180,2026-09-08,I was promised a full refund but only got store credit. I selected the original payment method for the reimbursement. I am really angry about this.,Streaming Subscription,Email
+UPL-00181,2026-09-08,The support staff gave me conflicting information. The email thread has no reply from your side. I am very frustrated about this.,Streaming Subscription,Email
+UPL-00182,2026-09-08,"I cannot connect my smart speaker to the app, it keeps showing an error. Could you look into this as soon as possible?",Smart Speaker,Social Media
+UPL-00183,2026-09-08,I was charged twice for my wireless earbuds this month. I ordered this as a gift.,Wireless Earbuds,Social Media
+UPL-00184,2026-09-08,The battery on my streaming subscription drains within an hour. There is visible damage near the edge. This is unacceptable.,Streaming Subscription,Social Media
+UPL-00185,2026-09-08,The stitching came loose on first use. I only used it a handful of times.,Laptop,Social Media
+UPL-00186,2026-09-08,The packaging uses too much plastic. I am extremely frustrated.,Smartphone,Email
+UPL-00187,2026-09-08,Nobody has confirmed my return for the laptop. The return confirmation email arrived last month.,Laptop,Email
+UPL-00188,2026-09-09,There is an unexpected fee on my bill that nobody explained. I am extremely annoyed about this.,Laptop,Email
+UPL-00189,2026-09-09,The courier left my smart speaker outside in the rain and it got damaged. The shipping address on the label looks correct.,Smart Speaker,Email
+UPL-00190,2026-09-09,The newsletter emails are too frequent. I am deeply fed up about this.,Smartphone,Email
+UPL-00191,2026-09-09,The troubleshooting steps from your guide did not fix the problem. The status light keeps blinking orange. I have been a customer for 7 years.,Wireless Earbuds,Social Media
+UPL-00192,2026-09-09,Parts of the streaming subscription were broken out of the box. I need this resolved before the weekend.,Streaming Subscription,Social Media
+UPL-00193,2026-09-09,My monthly statement includes charges I do not recognize. I am extremely frustrated about this.,Home Router,Email
+UPL-00194,2026-09-09,My refund was approved but the money never reached my account. Please confirm receipt of this message.,Fitness Tracker,Social Media
+UPL-00195,2026-09-09,The laptop is defective and makes a loud buzzing noise. I only used it a handful of times. It happened again yesterday. I am really frustrated about this.,Laptop,Social Media
+UPL-00196,2026-09-09,The software crashes every time I open the settings page. I have been a customer for 4 years. I am not satisfied at all.,Home Router,Social Media
+UPL-00197,2026-09-09,I cancelled within the trial period but you refuse to refund me. The bank shows no pending credit. Very disappointed with this experience.,Smartphone,Social Media
+UPL-00198,2026-09-09,There is an unexpected fee on my bill that nobody explained. The invoice number is printed on the second page. I am extremely upset about this.,Streaming Subscription,Web Form
+UPL-00199,2026-09-09,The troubleshooting steps from your guide did not fix the problem. I tried reinstalling the application. I need this resolved before the weekend. I am very frustrated about this.,Smartphone,Phone
+UPL-00200,2026-09-09,There is an unexpected fee on my bill that nobody explained. I need this resolved before the weekend. I am extremely frustrated.,Laptop,Social Media
+UPL-00201,2026-09-09,The material feels cheap and started falling apart. Nobody has confirmed my return for the home router. The warranty card is still in the box. This is the second time this has happened.,Home Router,Phone
+UPL-00202,2026-09-09,Refund processing is taking much longer than the stated five business days. There is an unexpected fee on my bill that nobody explained. The bank shows no pending credit. I have been a customer for 7 years. I am extremely upset about this.,Smart Watch,Phone
+UPL-00203,2026-09-09,The battery on my fitness tracker drains within an hour. The finish is peeling off in places. I am absolutely frustrated about this.,Fitness Tracker,Phone
+UPL-00204,2026-09-09,"I cannot connect my fitness tracker to the app, it keeps showing an error. I could not find the product information I was looking for. The error code displayed is unclear. I have been a customer for 4 years. Kindly let me know how to proceed.",Fitness Tracker,Email
+UPL-00205,2026-09-10,The courier left my smartphone outside in the rain and it got damaged. I am totally fed up about this.,Smartphone,Web Form
+UPL-00206,2026-09-10,The package was delivered to the wrong address. The shipping address on the label looks correct.,Smart Watch,Email
+UPL-00207,2026-09-10,The package was delivered to the wrong address. I need this resolved before the weekend. Very disappointed with this experience.,Smart Speaker,Phone
+UPL-00208,2026-09-10,I need help configuring the wifi setup on my smart watch. The status light keeps blinking orange. I am not satisfied at all.,Smart Watch,Email
+UPL-00209,2026-09-10,My invoice shows an incorrect amount for the streaming subscription. The invoice number is printed on the second page. I ordered this as a gift. This is unacceptable.,Streaming Subscription,Email
+UPL-00210,2026-09-10,The color looks nothing like the pictures and the build is flimsy. There is visible damage near the edge. Thanks to the team for the patience.,Smart Watch,Chat
+UPL-00211,2026-09-10,I was charged twice for my smartphone this month.,Smartphone,Web Form
+UPL-00212,2026-09-10,The fitness tracker stopped working after just two weeks. Nobody replied to my emails for a week. There is visible damage near the edge. I ordered this as a gift.,Fitness Tracker,Social Media
+UPL-00213,2026-09-10,I need help configuring the wifi setup on my smartphone. I am deeply angry about this.,Smartphone,Social Media
+UPL-00214,2026-09-10,I have been on hold for over an hour with no answer. The wireless earbuds stopped working after just two weeks. The email thread has no reply from your side. I ordered this as a gift.,Wireless Earbuds,Web Form
+UPL-00215,2026-09-10,Customer service has been unhelpful and slow to respond. The manager on duty was unavailable. I have been a customer for 4 years.,Smartphone,Phone
+UPL-00216,2026-09-10,My smartphone order has not arrived and the tracking has not updated in days. The shipping address on the label looks correct. Thank you for the quick help so far.,Smartphone,Chat
+UPL-00217,2026-09-10,"My invoice shows an incorrect amount for the fitness tracker. The invoice number is printed on the second page. Happy with the brand otherwise, thanks in advance.",Fitness Tracker,Web Form
+UPL-00218,2026-09-10,My monthly statement includes charges I do not recognize. Could you check this today?,Smart Watch,Email
+UPL-00219,2026-09-10,I was only refunded part of the amount I paid. I kept the receipt and the original packaging. Please confirm receipt of this message.,Streaming Subscription,Phone
+UPL-00220,2026-09-10,The packaging uses too much plastic. I am writing about a general matter. I am not happy with how this was handled.,Fitness Tracker,Web Form
+UPL-00221,2026-09-10,The home router is defective and makes a loud buzzing noise. I only used it a handful of times. I contacted you by web form before. Could you check this soon?,Home Router,Web Form
+UPL-00222,2026-09-10,No one called me back as promised.,Fitness Tracker,Social Media
+UPL-00223,2026-09-10,Delivery was supposed to take 3 days but it has been two weeks. The shipping address on the label looks correct.,Home Router,Phone
+UPL-00224,2026-09-10,I was only refunded part of the amount I paid.,Streaming Subscription,Email
+UPL-00225,2026-09-10,The website layout is confusing and hard to navigate. I am writing about a general matter. This is the second time this has happened. Thanks to everyone for the quick reply.,Smart Watch,Email
+UPL-00226,2026-09-10,The installation wizard stops at 40 percent with an error code. I tried reinstalling the application. I am extremely disappointed about this.,Smartphone,Web Form
+UPL-00227,2026-09-10,My parcel arrived with the box crushed. I am extremely fed up about this.,Smart Speaker,Email
+UPL-00228,2026-09-10,Your store was closed during the posted opening hours. The stitching came loose on first use. I am writing about a general matter.,Smart Speaker,Web Form
+UPL-00229,2026-09-10,"The price I was quoted for the home router does not match what I was billed. The charge appeared on the billing page of my account. Terrible, I want this fixed immediately.",Home Router,Chat
+UPL-00230,2026-09-10,Delivery was supposed to take 3 days but it has been two weeks.,Smart Speaker,Chat
+UPL-00231,2026-09-10,Customer service has been unhelpful and slow to respond. The battery on my streaming subscription drains within an hour. I am extremely frustrated.,Streaming Subscription,Email
+UPL-00232,2026-09-10,The delivery driver never showed up for my scheduled slot. A neighbour said no courier had visited the street. I am deeply disappointed about this.,Laptop,Social Media
+UPL-00233,2026-09-11,The sync between my devices keeps failing. I am really fed up about this.,Smart Speaker,Social Media
+UPL-00234,2026-09-11,I was overcharged on my last wireless earbuds payment. The invoice number is printed on the second page. Please confirm receipt of this message.,Wireless Earbuds,Web Form
+UPL-00235,2026-09-11,My refund was approved but the money never reached my account. I am deeply fed up about this.,Streaming Subscription,Web Form
+UPL-00236,2026-09-11,Parts of the smartphone were broken out of the box. There is visible damage near the edge. I am extremely frustrated.,Smartphone,Web Form
+UPL-00237,2026-09-11,I was told the order shipped but there is no tracking number. A neighbour said no courier had visited the street.,Streaming Subscription,Web Form
+UPL-00238,2026-09-11,I was told the order shipped but there is no tracking number. I am really frustrated about this.,Smart Speaker,Email
+UPL-00239,2026-09-11,The laptop stopped working after just two weeks. There is visible damage near the edge. This is a disgrace and a waste of my time.,Laptop,Email
+UPL-00240,2026-09-11,Nobody replied to my emails for a week. The email thread has no reply from your side. I am really disappointed about this.,Smart Speaker,Email
+UPL-00241,2026-09-11,The smart speaker arrived with a cracked screen and scratches. I would like an update.,Smart Speaker,Email
+UPL-00242,2026-09-11,My smartphone order has not arrived and the tracking has not updated in days. I paid extra for express shipping. I am not satisfied at all.,Smartphone,Phone
+UPL-00243,2026-09-11,The tax on my invoice looks wrong. My payment was made by visa card. I contacted you by social media before. I am extremely frustrated.,Home Router,Social Media
+UPL-00244,2026-09-11,The tax on my invoice looks wrong. The amount differs from the confirmation email. I am extremely frustrated.,Streaming Subscription,Phone
+UPL-00245,2026-09-11,Parts of the smart speaker were broken out of the box. I only used it a handful of times.,Smart Speaker,Email
+UPL-00246,2026-09-11,The battery on my smart speaker drains within an hour. The delivery driver never showed up for my scheduled slot. Worst experience ever.,Smart Speaker,Social Media
+UPL-00247,2026-09-11,The material feels cheap and started falling apart. Worst experience ever.,Smart Speaker,Web Form
+UPL-00248,2026-09-11,Nobody has confirmed my return for the streaming subscription.,Streaming Subscription,Social Media
+UPL-00249,2026-09-11,The smart watch arrived with a cracked screen and scratches. I only used it a handful of times. Please advise on next steps.,Smart Watch,Email
+UPL-00250,2026-09-12,The wireless earbuds overheats and shuts down randomly. I only used it a handful of times. I am absolutely annoyed about this.,Wireless Earbuds,Social Media
+UPL-00251,2026-09-12,"I cannot connect my streaming subscription to the app, it keeps showing an error. This is the second time this has happened. This is a disgrace and a waste of my time.",Streaming Subscription,Email
+UPL-00252,2026-09-12,Your representative promised a follow up that never happened. The firmware update failed and my laptop is stuck on a loading screen. Each agent asked me the same questions again. I have been a customer for 7 years. This is unacceptable.,Laptop,Social Media
+UPL-00253,2026-09-12,"The package was delivered to the wrong address. The estimated arrival date keeps changing. Terrible, I want this fixed immediately.",Home Router,Phone
+UPL-00254,2026-09-12,I returned the smart watch three weeks ago and still have not received my refund. I selected the original payment method for the reimbursement. Thanks to everyone for the help so far.,Smart Watch,Chat
+UPL-00255,2026-09-12,The battery on my smart watch drains within an hour. The finish is peeling off in places.,Smart Watch,Email
+UPL-00256,2026-09-12,The smartphone stopped working after just two weeks. I appreciate your team and hope it gets sorted.,Smartphone,Web Form
+UPL-00257,2026-09-12,The support staff gave me conflicting information. I was given a reference number but nobody uses it. I am extremely frustrated.,Home Router,Email
+UPL-00258,2026-09-12,The wireless earbuds stopped working after just two weeks. It happened again yesterday.,Wireless Earbuds,Email
+UPL-00259,2026-09-12,The support staff gave me conflicting information. It happened again yesterday. Could you review this this week?,Wireless Earbuds,Email
+UPL-00260,2026-09-12,My account was locked without any explanation. The verification link expired immediately. It happened again yesterday.,Wireless Earbuds,Phone
+UPL-00261,2026-09-12,The return label you sent does not work so I cannot send back the smart watch. I ordered this as a gift. I am extremely upset about this.,Smart Watch,Phone
+UPL-00262,2026-09-12,"I cannot log in to my account, the password reset email never arrives.",Streaming Subscription,Social Media
+UPL-00263,2026-09-12,I cancelled within the trial period but you refuse to refund me. I am totally fed up about this.,Streaming Subscription,Email
+UPL-00264,2026-09-12,The quality has gone downhill compared to my previous wireless earbuds. I only used it a handful of times. I am not satisfied at all.,Wireless Earbuds,Email
+UPL-00265,2026-09-12,My monthly statement includes charges I do not recognize. The amount differs from the confirmation email.,Streaming Subscription,Phone
+UPL-00266,2026-09-12,Shipping is far slower than promised. A neighbour said no courier had visited the street.,Fitness Tracker,App Store
+UPL-00267,2026-09-12,My account was locked without any explanation. The profile page loads but shows no data. I am absolutely disappointed about this.,Smart Speaker,Chat
+UPL-00268,2026-09-12,"I cannot connect my home router to the app, it keeps showing an error. The status light keeps blinking orange. I am very fed up about this.",Home Router,Phone
+UPL-00269,2026-09-12,The material feels cheap and started falling apart. I need this resolved before the weekend. Let me know what information you need.,Streaming Subscription,Chat
+UPL-00270,2026-09-12,Items from my home router order were missing from the shipment. The shipping address on the label looks correct.,Home Router,Social Media
+UPL-00271,2026-09-12,The tax on my invoice looks wrong. My profile data disappeared after I signed in. I attached the statement for reference. I am extremely upset about this.,Streaming Subscription,Phone
+UPL-00272,2026-09-12,"The installation wizard stops at 40 percent with an error code. The battery on my smart speaker drains within an hour. The manual does not explain this situation. Happy with the brand otherwise, thanks in advance.",Smart Speaker,Web Form
+UPL-00273,2026-09-12,My monthly statement includes charges I do not recognize. I am very disappointed about this.,Streaming Subscription,Chat
+UPL-00274,2026-09-13,No one called me back as promised. Each agent asked me the same questions again.,Smart Speaker,Email
+UPL-00275,2026-09-13,I need help configuring the wifi setup on my smartphone. I tried reinstalling the application.,Smartphone,Web Form
+UPL-00276,2026-09-13,I cancelled within the trial period but you refuse to refund me. Thanks to your staff for the quick reply.,Fitness Tracker,Web Form
+UPL-00277,2026-09-13,I cancelled within the trial period but you refuse to refund me. I kept the receipt and the original packaging. I am very upset about this.,Home Router,Social Media
+UPL-00278,2026-09-13,I was told the order shipped but there is no tracking number. The estimated arrival date keeps changing. I have been a customer for 4 years. Could you investigate this this week?,Fitness Tracker,Web Form
+UPL-00279,2026-09-13,The tax on my invoice looks wrong. I ordered this as a gift. I am extremely disappointed about this.,Smart Watch,Web Form
+UPL-00280,2026-09-13,The website layout is confusing and hard to navigate. I was transferred between three departments and had to repeat myself every time.,Home Router,Phone
+UPL-00281,2026-09-13,The smartphone overheats and shuts down randomly. Could you look into this soon?,Smartphone,Social Media
+UPL-00282,2026-09-13,The smartphone arrived with a cracked screen and scratches. The finish is peeling off in places.,Smartphone,Phone
+UPL-00283,2026-09-13,The firmware update failed and my smart speaker is stuck on a loading screen. I tried reinstalling the application. Very disappointed with this experience.,Smart Speaker,Email
+UPL-00284,2026-09-13,"Delivery was supposed to take 3 days but it has been two weeks. The shipping address on the label looks correct. Not bad service so far, thanks.",Home Router,App Store
+UPL-00285,2026-09-13,The color looks nothing like the pictures and the build is flimsy. The finish is peeling off in places. I have been a customer for 4 years. Very disappointed with this experience.,Smart Speaker,Social Media
+UPL-00286,2026-09-13,The price I was quoted for the streaming subscription does not match what I was billed. My payment was made by visa card. Could you look into this?,Streaming Subscription,Web Form
+UPL-00287,2026-09-13,I requested a refund for the defective wireless earbuds and was denied.,Wireless Earbuds,Web Form
+UPL-00288,2026-09-13,I was charged twice for my smart watch this month. No one called me back as promised. The amount differs from the confirmation email. Worst experience ever.,Smart Watch,Chat
+UPL-00289,2026-09-13,I was promised a full refund but only got store credit. I kept the receipt and the original packaging.,Streaming Subscription,Email
+UPL-00290,2026-09-13,I cannot delete my account as the button does nothing. The verification link expired immediately. Very disappointed with this experience.,Fitness Tracker,Email
+UPL-00291,2026-09-14,"Items from my laptop order were missing from the shipment. A neighbour said no courier had visited the street. Terrible, I want this fixed immediately.",Laptop,Web Form
+UPL-00292,2026-09-14,The promotional offer details were unclear. I hope this can be considered for the future.,Wireless Earbuds,Social Media
+UPL-00293,2026-09-14,The carrier marked my order as delivered but I never received it.,Fitness Tracker,Social Media
+UPL-00294,2026-09-14,Autopay took money from my bank account on the wrong date. The amount differs from the confirmation email. Please advise on next steps.,Smartphone,Chat
+UPL-00295,2026-09-14,There is an unexpected fee on my bill that nobody explained. This is a disgrace and a waste of my time.,Smart Speaker,Email
+UPL-00296,2026-09-14,The support staff gave me conflicting information. I ordered this as a gift. Thank you for the quick help so far.,Fitness Tracker,Social Media
+UPL-00297,2026-09-14,The material feels cheap and started falling apart. I am extremely angry about this.,Wireless Earbuds,Phone
+UPL-00298,2026-09-14,I received a late payment penalty even though I paid on time. The charge appeared on the billing page of my account.,Smart Speaker,Web Form
+UPL-00299,2026-09-14,The software crashes every time I open the settings page. The error code displayed is unclear. Thanks to your staff for the quick reply.,Streaming Subscription,Web Form
+UPL-00300,2026-09-14,I was charged twice for my laptop this month. I am very angry about this.,Laptop,Web Form
+UPL-00301,2026-09-14,The smartphone arrived with a cracked screen and scratches. I am not satisfied at all.,Smartphone,Email
+UPL-00302,2026-09-14,Autopay took money from my bank account on the wrong date. The invoice number is printed on the second page.,Streaming Subscription,Phone
+UPL-00303,2026-09-14,"I requested a refund for the defective streaming subscription and was denied. Great service overall, I just need this resolved.",Streaming Subscription,Web Form
+UPL-00304,2026-09-14,The battery on my smart watch drains within an hour. I have been a customer for 7 years. Could you look into this as soon as possible?,Smart Watch,Web Form
+UPL-00305,2026-09-14,The battery on my smartphone drains within an hour. The finish is peeling off in places. I contacted you by web form before.,Smartphone,Web Form
+UPL-00306,2026-09-14,The smart speaker is defective and makes a loud buzzing noise. I was overcharged on my last smart speaker payment. I only used it a handful of times. I contacted you by phone before. This is unacceptable.,Smart Speaker,Phone
+UPL-00307,2026-09-14,The battery on my home router drains within an hour. The finish is peeling off in places.,Home Router,Web Form
+UPL-00308,2026-09-14,No one called me back as promised. Each agent asked me the same questions again. This is unacceptable.,Smart Watch,Web Form
+UPL-00309,2026-09-14,The material feels cheap and started falling apart. I only used it a handful of times. I am totally annoyed about this.,Streaming Subscription,Social Media
+UPL-00310,2026-09-14,I returned the smartphone three weeks ago and still have not received my refund. I need this resolved before the weekend. Thanks to the team for the help so far.,Smartphone,Phone
+UPL-00311,2026-09-15,The price I was quoted for the streaming subscription does not match what I was billed. Reporting this for your records.,Streaming Subscription,Email
+UPL-00312,2026-09-15,The sync between my devices keeps failing. The error code displayed is unclear. I ordered this as a gift.,Laptop,Social Media
+UPL-00313,2026-09-15,I have been unable to pair the device over bluetooth. I tried reinstalling the application. I have been a customer for 4 years. I am not happy with how this was handled.,Wireless Earbuds,Web Form
+UPL-00314,2026-09-15,My parcel arrived with the box crushed. I paid extra for express shipping. I need this resolved before the weekend. Could you investigate this soon?,Fitness Tracker,Phone
+UPL-00315,2026-09-15,I would like to suggest adding more payment options. I am absolutely frustrated about this.,Smartphone,Web Form
+UPL-00316,2026-09-15,The price I was quoted for the streaming subscription does not match what I was billed. The invoice number is printed on the second page. I am furious and considering leaving.,Streaming Subscription,Chat
+UPL-00317,2026-09-15,I received a late payment penalty even though I paid on time. Could you review this this week?,Streaming Subscription,Email
+UPL-00318,2026-09-15,The battery on my home router drains within an hour. Very disappointed with this experience.,Home Router,App Store
+UPL-00319,2026-09-15,The sync between my devices keeps failing. The status light keeps blinking orange.,Laptop,Email
+UPL-00320,2026-09-15,I need help configuring the wifi setup on my laptop. I am very frustrated about this.,Laptop,Email
+UPL-00321,2026-09-15,I was told the order shipped but there is no tracking number. The tracking page still says in transit. I am not satisfied at all.,Smartphone,Phone
+UPL-00322,2026-09-15,I cannot delete my account as the button does nothing. My username is no longer recognised. Thanks to everyone for the help so far.,Wireless Earbuds,Phone
+UPL-00323,2026-09-15,The troubleshooting steps from your guide did not fix the problem. I already restarted the device twice. I am deeply upset about this.,Laptop,Chat
+UPL-00324,2026-09-15,I was told the order shipped but there is no tracking number. The tracking page still says in transit. This is a disgrace and a waste of my time.,Home Router,Phone
+UPL-00325,2026-09-15,The battery on my laptop drains within an hour. The warranty card is still in the box. I am furious and considering leaving.,Laptop,Web Form
+UPL-00326,2026-09-15,The carrier marked my order as delivered but I never received it. I ordered this as a gift. I am deeply upset about this.,Smart Speaker,Social Media
+UPL-00327,2026-09-15,My account was locked without any explanation. My username is no longer recognised.,Home Router,Social Media
+UPL-00328,2026-09-15,The support staff gave me conflicting information. The delivery driver never showed up for my scheduled slot. The manager on duty was unavailable. This is unacceptable.,Smart Speaker,Chat
+UPL-00329,2026-09-15,The quality has gone downhill compared to my previous smartphone. The finish is peeling off in places.,Smartphone,Phone
+UPL-00330,2026-09-15,I need help configuring the wifi setup on my wireless earbuds. The error code displayed is unclear.,Wireless Earbuds,Email
+UPL-00331,2026-09-15,I keep getting logged out of my account every few minutes. I cleared my browser cache without any change. Could you check this this week?,Smartphone,Web Form
+UPL-00332,2026-09-15,Nobody replied to my emails for a week.,Streaming Subscription,Social Media
+UPL-00333,2026-09-15,The package was delivered to the wrong address. I am extremely disappointed about this.,Streaming Subscription,Phone
+UPL-00334,2026-09-15,The troubleshooting steps from your guide did not fix the problem. I tried reinstalling the application.,Home Router,Social Media
+UPL-00335,2026-09-15,The wireless earbuds is defective and makes a loud buzzing noise. The warranty card is still in the box. I am very annoyed about this.,Wireless Earbuds,Chat
+UPL-00336,2026-09-15,My refund was approved but the money never reached my account. Could you review this today?,Streaming Subscription,Email
+UPL-00337,2026-09-15,The troubleshooting steps from your guide did not fix the problem. The status light keeps blinking orange. Could you look into this soon?,Laptop,Email
+UPL-00338,2026-09-15,Parts of the home router were broken out of the box. I only used it a handful of times. I need this resolved before the weekend.,Home Router,Social Media
+UPL-00339,2026-09-15,I have been on hold for over an hour with no answer.,Smart Watch,Phone
+UPL-00340,2026-09-15,The delivery driver never showed up for my scheduled slot. The tracking page still says in transit. I appreciate your team and hope it gets sorted.,Wireless Earbuds,Chat
+UPL-00341,2026-09-16,My profile data disappeared after I signed in. The verification link expired immediately.,Wireless Earbuds,Email
+UPL-00342,2026-09-16,The stitching came loose on first use. The package was delivered to the wrong address. The finish is peeling off in places. I need this resolved before the weekend.,Streaming Subscription,Web Form
+UPL-00343,2026-09-16,I was transferred between three departments and had to repeat myself every time. The email thread has no reply from your side. I need this resolved before the weekend. Could you review this today?,Home Router,Web Form
+UPL-00344,2026-09-16,No one called me back as promised. The sync between my devices keeps failing. I was given a reference number but nobody uses it. I am absolutely upset about this.,Streaming Subscription,Phone
+UPL-00345,2026-09-16,Nobody has confirmed my return for the wireless earbuds. I kept the receipt and the original packaging. I am extremely annoyed about this.,Wireless Earbuds,Social Media
+UPL-00346,2026-09-16,I would like to suggest adding more payment options. I contacted you by email before.,Home Router,Email
+UPL-00347,2026-09-16,I was overcharged on my last streaming subscription payment. I am really fed up about this.,Streaming Subscription,Web Form
+UPL-00348,2026-09-16,The color looks nothing like the pictures and the build is flimsy. This is the second time this has happened. Could you check this this week?,Fitness Tracker,Phone
+UPL-00349,2026-09-16,The battery on my streaming subscription drains within an hour. I have been a customer for 7 years. Let me know what information you need.,Streaming Subscription,Social Media
+UPL-00350,2026-09-16,I was told the order shipped but there is no tracking number.,Smart Speaker,Social Media
+UPL-00351,2026-09-16,The package was delivered to the wrong address. I paid extra for express shipping. I am absolutely upset about this.,Smart Speaker,Email
+UPL-00352,2026-09-16,The newsletter emails are too frequent. The smart watch is defective and makes a loud buzzing noise. I have used the site on several different browsers. I need this resolved before the weekend.,Smart Watch,Chat
+UPL-00353,2026-09-16,The home router is defective and makes a loud buzzing noise. The warranty card is still in the box. I am very disappointed about this.,Home Router,Phone
+UPL-00354,2026-09-16,I was promised a full refund but only got store credit. I kept the receipt and the original packaging.,Streaming Subscription,Social Media
+UPL-00355,2026-09-16,The installation wizard stops at 40 percent with an error code. Could you look into this?,Fitness Tracker,Web Form
+UPL-00356,2026-09-16,The color looks nothing like the pictures and the build is flimsy. I am totally frustrated about this.,Streaming Subscription,Email
+UPL-00357,2026-09-16,"My profile data disappeared after I signed in. Terrible, I want this fixed immediately.",Home Router,Web Form
+UPL-00358,2026-09-16,The sync between my devices keeps failing. The error code displayed is unclear.,Wireless Earbuds,Web Form
+UPL-00359,2026-09-16,The chat representative closed the conversation without solving anything. Please offer the smartphone in more colors. I am not satisfied at all.,Smartphone,Chat
+UPL-00360,2026-09-17,I need help configuring the wifi setup on my smartphone. I already restarted the device twice. I contacted you by social media before.,Smartphone,Social Media
+UPL-00361,2026-09-17,Delivery was supposed to take 3 days but it has been two weeks. A neighbour said no courier had visited the street.,Wireless Earbuds,Social Media
+UPL-00362,2026-09-17,There is an unexpected fee on my bill that nobody explained. The invoice number is printed on the second page. I contacted you by chat before. I am really frustrated about this.,Smart Speaker,Chat
+UPL-00363,2026-09-17,The quality has gone downhill compared to my previous smart speaker. I am really frustrated about this.,Smart Speaker,Email
+UPL-00364,2026-09-17,I was overcharged on my last streaming subscription payment. The amount differs from the confirmation email. Reporting this for your records.,Streaming Subscription,Web Form
+UPL-00365,2026-09-17,My parcel arrived with the box crushed. A neighbour said no courier had visited the street. I contacted you by email before. This is a disgrace and a waste of my time.,Home Router,Email
+UPL-00366,2026-09-17,My home router order has not arrived and the tracking has not updated in days. The shipping address on the label looks correct. Please confirm receipt of this message.,Home Router,Social Media
+UPL-00367,2026-09-17,The color looks nothing like the pictures and the build is flimsy. There is visible damage near the edge.,Smart Speaker,Social Media
+UPL-00368,2026-09-17,The wireless earbuds stopped working after just two weeks. Let me know what information you need.,Wireless Earbuds,Social Media
+UPL-00369,2026-09-17,The troubleshooting steps from your guide did not fix the problem. I am very angry about this.,Smartphone,Social Media
+UPL-00370,2026-09-17,"Parts of the streaming subscription were broken out of the box. Terrible, I want this fixed immediately.",Streaming Subscription,Social Media
+UPL-00371,2026-09-17,Autopay took money from my bank account on the wrong date. I attached the statement for reference. I am extremely frustrated.,Wireless Earbuds,Social Media
+UPL-00372,2026-09-17,The software crashes every time I open the settings page. The status light keeps blinking orange.,Streaming Subscription,Social Media
+UPL-00373,2026-09-17,Customer service has been unhelpful and slow to respond. I am not happy with how this was handled.,Smart Speaker,App Store
+UPL-00374,2026-09-17,I requested a refund for the defective wireless earbuds and was denied. I selected the original payment method for the reimbursement. I am absolutely fed up about this.,Wireless Earbuds,Email
+UPL-00375,2026-09-17,I would like to suggest adding more payment options. Worst experience ever.,Wireless Earbuds,Web Form
+UPL-00376,2026-09-17,I keep getting logged out of my account every few minutes. My username is no longer recognised. I am extremely frustrated about this.,Wireless Earbuds,Email
+UPL-00377,2026-09-17,Nobody has confirmed my return for the smart watch. I selected the original payment method for the reimbursement. I have been a customer for 1 years. Thanks to your staff for the help so far.,Smart Watch,Email
+UPL-00378,2026-09-17,The package was delivered to the wrong address. I ordered this as a gift. Thank you for the quick help so far.,Fitness Tracker,Social Media
+UPL-00379,2026-09-17,Autopay took money from my bank account on the wrong date. The chat representative closed the conversation without solving anything. I need this resolved before the weekend.,Smart Speaker,Phone
+UPL-00380,2026-09-17,No one called me back as promised. Worst experience ever.,Laptop,Social Media
+UPL-00381,2026-09-17,The refund went to the wrong card. The return confirmation email arrived last month. Could you look into this today?,Laptop,Chat
+UPL-00382,2026-09-18,"I cannot connect my wireless earbuds to the app, it keeps showing an error. The error code displayed is unclear. I need this resolved before the weekend. I am very disappointed about this.",Wireless Earbuds,Email
+UPL-00383,2026-09-18,"My monthly statement includes charges I do not recognize. The amount differs from the confirmation email. I need this resolved before the weekend. Happy with the brand otherwise, thanks in advance.",Laptop,Email
+UPL-00384,2026-09-18,I was charged twice for my smart speaker this month. I am furious and considering leaving.,Smart Speaker,Social Media
+UPL-00385,2026-09-18,The delivery driver never showed up for my scheduled slot. A neighbour said no courier had visited the street. Could you review this soon?,Smartphone,Web Form
+UPL-00386,2026-09-18,The package was delivered to the wrong address. I paid extra for express shipping. Thanks to everyone for the help so far.,Smartphone,Email
+UPL-00387,2026-09-18,The firmware update failed and my wireless earbuds is stuck on a loading screen.,Wireless Earbuds,Social Media
+UPL-00388,2026-09-18,I need help configuring the wifi setup on my smart watch. I tried reinstalling the application.,Smart Watch,Social Media
+UPL-00389,2026-09-18,The chat representative closed the conversation without solving anything. I was given a reference number but nobody uses it. This is unacceptable.,Smartphone,Web Form
+UPL-00390,2026-09-18,Nobody has confirmed my return for the streaming subscription. I am extremely disappointed about this.,Streaming Subscription,Phone
+UPL-00391,2026-09-18,The delivery driver never showed up for my scheduled slot. I paid extra for express shipping. I am not satisfied at all.,Smart Watch,Social Media
+UPL-00392,2026-09-18,I was overcharged on my last smart watch payment. Worst experience ever.,Smart Watch,Web Form
+UPL-00393,2026-09-18,The software crashes every time I open the settings page. The status light keeps blinking orange.,Smart Speaker,Phone
+UPL-00394,2026-09-18,The stitching came loose on first use. I only used it a handful of times. I am deeply frustrated about this.,Wireless Earbuds,Phone
+UPL-00395,2026-09-18,The app freezes on startup after the latest update. The manual does not explain this situation. I am very fed up about this.,Streaming Subscription,Phone
+UPL-00396,2026-09-18,Shipping is far slower than promised. I am furious and considering leaving.,Streaming Subscription,Web Form
+UPL-00397,2026-09-18,Your representative promised a follow up that never happened. The call lasted nearly forty minutes. Thanks to everyone for the patience.,Streaming Subscription,App Store
+UPL-00398,2026-09-18,My account shows the wrong subscription tier. The profile page loads but shows no data. This is a disgrace and a waste of my time.,Laptop,Web Form
+UPL-00399,2026-09-18,I need help configuring the wifi setup on my wireless earbuds. I tried reinstalling the application. Worst experience ever.,Wireless Earbuds,Social Media
+UPL-00400,2026-09-18,"I was told the order shipped but there is no tracking number. The sync between my devices keeps failing. The tracking page still says in transit. Terrible, I want this fixed immediately.",Smartphone,Social Media
+UPL-00401,2026-09-18,My account was locked without any explanation. I use the same email address as always. I am totally angry about this.,Laptop,Web Form
+UPL-00402,2026-09-18,The wireless earbuds is defective and makes a loud buzzing noise. There is visible damage near the edge. I contacted you by chat before. Worst experience ever.,Wireless Earbuds,Chat
+UPL-00403,2026-09-18,The support portal gives a timeout error when I submit a ticket. The status light keeps blinking orange. I need this resolved before the weekend. I am extremely frustrated.,Wireless Earbuds,Social Media
+UPL-00404,2026-09-18,The streaming subscription arrived with a cracked screen and scratches. I cancelled within the trial period but you refuse to refund me. It happened again yesterday. I am absolutely upset about this.,Streaming Subscription,Chat
+UPL-00405,2026-09-18,The price I was quoted for the smart watch does not match what I was billed. Items from my smart watch order were missing from the shipment. I am really annoyed about this.,Smart Watch,Phone
+UPL-00406,2026-09-18,The delivery driver never showed up for my scheduled slot. The shipping address on the label looks correct.,Wireless Earbuds,Email
+UPL-00407,2026-09-19,The tax on my invoice looks wrong. I am furious and considering leaving.,Smartphone,Social Media
+UPL-00408,2026-09-19,I was unable to update my email address on my profile. I am totally disappointed about this.,Fitness Tracker,Social Media
+UPL-00409,2026-09-19,The firmware update failed and my wireless earbuds is stuck on a loading screen. It happened again yesterday.,Wireless Earbuds,App Store
+UPL-00410,2026-09-19,My refund was approved but the money never reached my account. It happened again yesterday. Could you review this soon?,Streaming Subscription,Web Form
+UPL-00411,2026-09-19,The package was delivered to the wrong address. The mobile site is slow on my phone. I paid extra for express shipping. I am extremely disappointed about this.,Wireless Earbuds,Web Form
+UPL-00412,2026-09-19,The material feels cheap and started falling apart. My previous model lasted for years. Could you review this soon?,Streaming Subscription,App Store
+UPL-00413,2026-09-19,My streaming subscription order has not arrived and the tracking has not updated in days. I paid extra for express shipping. I am furious and considering leaving.,Streaming Subscription,Phone
+UPL-00414,2026-09-19,There is an unexpected fee on my bill that nobody explained. Refund processing is taking much longer than the stated five business days. The amount differs from the confirmation email. This is a disgrace and a waste of my time.,Streaming Subscription,Phone
+UPL-00415,2026-09-19,My fitness tracker order has not arrived and the tracking has not updated in days. The shipping address on the label looks correct.,Fitness Tracker,Social Media
+UPL-00416,2026-09-19,The carrier marked my order as delivered but I never received it. The estimated arrival date keeps changing. Thanks to everyone for the friendly service.,Smart Watch,Chat
+UPL-00417,2026-09-19,My monthly statement includes charges I do not recognize. I contacted you by phone before. Could you check this today?,Smart Watch,Phone
+UPL-00418,2026-09-19,I cancelled within the trial period but you refuse to refund me.,Fitness Tracker,Phone
+UPL-00419,2026-09-20,The delivery driver never showed up for my scheduled slot. The support staff gave me conflicting information. I am not satisfied at all.,Wireless Earbuds,Web Form
+UPL-00420,2026-09-20,The refund went to the wrong card. The smartphone stopped working after just two weeks. This is the second time this has happened. Please advise on next steps.,Smartphone,Email
+UPL-00421,2026-09-20,"The battery on my home router drains within an hour. I only used it a handful of times. Terrible, I want this fixed immediately.",Home Router,Email
+UPL-00422,2026-09-20,My invoice shows an incorrect amount for the streaming subscription. The charge appeared on the billing page of my account. I have been a customer for 2 years. Worst experience ever.,Streaming Subscription,Chat
+UPL-00423,2026-09-20,I was told the order shipped but there is no tracking number. I paid extra for express shipping. Could you investigate this as soon as possible?,Wireless Earbuds,Web Form
+UPL-00424,2026-09-20,The support portal gives a timeout error when I submit a ticket. The error code displayed is unclear. I am totally upset about this.,Home Router,Email
+UPL-00425,2026-09-20,The price I was quoted for the smart speaker does not match what I was billed. My payment was made by visa card. I have been a customer for 1 years. This is unacceptable.,Smart Speaker,Web Form
+UPL-00426,2026-09-20,I have been unable to pair the device over bluetooth. I have been a customer for 6 years.,Streaming Subscription,Web Form
+UPL-00427,2026-09-20,I cancelled within the trial period but you refuse to refund me. I kept the receipt and the original packaging. I need this resolved before the weekend. Could you review this soon?,Smart Speaker,App Store
+UPL-00428,2026-09-20,Autopay took money from my bank account on the wrong date. Please offer the streaming subscription in more colors.,Streaming Subscription,Chat
+UPL-00429,2026-09-20,Delivery was supposed to take 3 days but it has been two weeks. I am extremely frustrated.,Wireless Earbuds,Social Media
+UPL-00430,2026-09-20,The price I was quoted for the smart speaker does not match what I was billed. I am deeply frustrated about this.,Smart Speaker,Chat
+UPL-00431,2026-09-20,"The fitness tracker stopped working after just two weeks. Autopay took money from my bank account on the wrong date. I only used it a handful of times. Terrible, I want this fixed immediately.",Fitness Tracker,Web Form
+UPL-00432,2026-09-20,The wireless earbuds is defective and makes a loud buzzing noise. Thanks to everyone for the quick reply.,Wireless Earbuds,Email
+UPL-00433,2026-09-20,The app freezes on startup after the latest update. I contacted you by email before. Let me know what information you need.,Smart Speaker,Email
+UPL-00434,2026-09-20,My parcel arrived with the box crushed. I need this resolved before the weekend. I am very disappointed about this.,Streaming Subscription,Email
+UPL-00435,2026-09-20,I keep getting logged out of my account every few minutes. I cleared my browser cache without any change.,Streaming Subscription,Chat
+UPL-00436,2026-09-20,Delivery was supposed to take 3 days but it has been two weeks. The estimated arrival date keeps changing. I am really disappointed about this.,Smart Speaker,Web Form
+UPL-00437,2026-09-20,I have been unable to pair the device over bluetooth. This is the second time this has happened. Could you check this soon?,Smart Watch,Social Media
+UPL-00438,2026-09-20,The software crashes every time I open the settings page. The manual does not explain this situation. I would like an update.,Streaming Subscription,Phone
+UPL-00439,2026-09-21,The quality has gone downhill compared to my previous wireless earbuds. There is visible damage near the edge.,Wireless Earbuds,Chat
+UPL-00440,2026-09-21,"Refund processing is taking much longer than the stated five business days. Terrible, I want this fixed immediately.",Wireless Earbuds,Web Form
+UPL-00441,2026-09-21,I was promised a full refund but only got store credit. The return was posted over two weeks ago.,Streaming Subscription,Social Media
+UPL-00442,2026-09-21,I was told the order shipped but there is no tracking number. I contacted you by chat before.,Streaming Subscription,Chat
+UPL-00443,2026-09-21,I could not find the product information I was looking for. A friend had the same impression. This is the second time this has happened. Could you investigate this today?,Smart Speaker,Phone
+UPL-00444,2026-09-21,I was promised a full refund but only got store credit. Worst experience ever.,Fitness Tracker,Social Media
+UPL-00445,2026-09-21,The two factor authentication code is never delivered to my phone. I cleared my browser cache without any change.,Streaming Subscription,Social Media
+UPL-00446,2026-09-21,There is an unexpected fee on my bill that nobody explained. I am furious and considering leaving.,Smart Speaker,Web Form
+UPL-00447,2026-09-21,Delivery was supposed to take 3 days but it has been two weeks. I would like to suggest adding more payment options. Thanks to the team for the patience.,Streaming Subscription,Email
+UPL-00448,2026-09-21,My credit card was charged after I cancelled my plan. The charge appeared on the billing page of my account. I need this resolved before the weekend. Could you investigate this today?,Laptop,Social Media
+UPL-00449,2026-09-21,I keep getting logged out of my account every few minutes. I am deeply angry about this.,Smartphone,Email
+UPL-00450,2026-09-21,"I cannot connect my streaming subscription to the app, it keeps showing an error.",Streaming Subscription,App Store
+UPL-00451,2026-09-21,The software crashes every time I open the settings page. I have been a customer for 4 years. I am furious and considering leaving.,Smart Watch,Email
+UPL-00452,2026-09-21,My loyalty points vanished from my account. I am deeply frustrated about this.,Home Router,Chat
+UPL-00453,2026-09-21,I was told the order shipped but there is no tracking number. This is the second time this has happened.,Smart Watch,App Store
+UPL-00454,2026-09-21,The tax on my invoice looks wrong. Could you check this today?,Streaming Subscription,Email
+UPL-00455,2026-09-21,"I cannot connect my smart speaker to the app, it keeps showing an error. The error code displayed is unclear. This is the second time this has happened.",Smart Speaker,Web Form
+UPL-00456,2026-09-21,The quality has gone downhill compared to my previous streaming subscription. The warranty card is still in the box. I ordered this as a gift. I am extremely disappointed about this.,Streaming Subscription,Social Media
+UPL-00457,2026-09-21,The courier left my streaming subscription outside in the rain and it got damaged. The estimated arrival date keeps changing. This is the second time this has happened. I am not satisfied at all.,Streaming Subscription,Email
+UPL-00458,2026-09-21,The software crashes every time I open the settings page. I am really upset about this.,Fitness Tracker,Email
+UPL-00459,2026-09-21,I was told the order shipped but there is no tracking number. Worst experience ever.,Wireless Earbuds,Web Form
+UPL-00460,2026-09-21,I was unable to update my email address on my profile. The profile page loads but shows no data. I am not satisfied at all.,Fitness Tracker,Chat
+UPL-00461,2026-09-21,Shipping is far slower than promised. I am really disappointed about this.,Wireless Earbuds,Social Media
+UPL-00462,2026-09-21,My invoice shows an incorrect amount for the streaming subscription. The charge appeared on the billing page of my account.,Streaming Subscription,Email
+UPL-00463,2026-09-21,Items from my smartphone order were missing from the shipment. Kindly let me know how to proceed.,Smartphone,Phone
+UPL-00464,2026-09-21,I was charged twice for my laptop this month. Could you review this today?,Laptop,Social Media
+UPL-00465,2026-09-21,Items from my streaming subscription order were missing from the shipment. This is the second time this has happened. Please advise on next steps.,Streaming Subscription,Social Media
+UPL-00466,2026-09-21,The stitching came loose on first use. I ordered this as a gift. I am really annoyed about this.,Wireless Earbuds,Phone
+UPL-00467,2026-09-21,There is an unexpected fee on my bill that nobody explained. My payment was made by visa card. This is a disgrace and a waste of my time.,Wireless Earbuds,Social Media
+UPL-00468,2026-09-21,The app freezes on startup after the latest update. I already restarted the device twice. I am totally upset about this.,Home Router,Web Form
+UPL-00469,2026-09-22,I could not find the product information I was looking for.,Streaming Subscription,Email
+UPL-00470,2026-09-22,The price I was quoted for the wireless earbuds does not match what I was billed. My payment was made by visa card. I have been a customer for 7 years.,Wireless Earbuds,Phone
+UPL-00471,2026-09-22,The stitching came loose on first use.,Fitness Tracker,Email
+UPL-00472,2026-09-22,I was told the order shipped but there is no tracking number. Very disappointed with this experience.,Smartphone,Email
+UPL-00473,2026-09-22,Your loyalty program rules are hard to understand. Please advise on next steps.,Home Router,Chat
+UPL-00474,2026-09-22,Autopay took money from my bank account on the wrong date. The invoice number is printed on the second page.,Smartphone,Chat
+UPL-00475,2026-09-22,Shipping is far slower than promised. This is unacceptable.,Smartphone,Email
+UPL-00476,2026-09-22,I was overcharged on my last wireless earbuds payment. This is the second time this has happened. I am absolutely frustrated about this.,Wireless Earbuds,Chat
+UPL-00477,2026-09-22,The streaming subscription arrived with a cracked screen and scratches. The finish is peeling off in places. I am extremely frustrated.,Streaming Subscription,Chat
+UPL-00478,2026-09-22,Your representative promised a follow up that never happened. The call lasted nearly forty minutes. Could you look into this this week?,Smartphone,Web Form
+UPL-00479,2026-09-22,"I cannot log in to my account, the password reset email never arrives. I ordered this as a gift. I am extremely disappointed about this.",Smart Speaker,Social Media
+UPL-00480,2026-09-22,I returned the wireless earbuds three weeks ago and still have not received my refund.,Wireless Earbuds,Social Media
+UPL-00481,2026-09-22,I received a late payment penalty even though I paid on time. The invoice number is printed on the second page. Could you look into this today?,Home Router,Chat
+UPL-00482,2026-09-22,The smartphone overheats and shuts down randomly. I only used it a handful of times.,Smartphone,Web Form
+UPL-00483,2026-09-22,The package was delivered to the wrong address. Please offer the smart speaker in more colors. I need this resolved before the weekend.,Smart Speaker,Email
+UPL-00484,2026-09-22,The installation wizard stops at 40 percent with an error code. I need this resolved before the weekend. I am deeply upset about this.,Streaming Subscription,Email
+UPL-00485,2026-09-22,Refund processing is taking much longer than the stated five business days. Could you check this this week?,Wireless Earbuds,Email
+UPL-00486,2026-09-22,The courier left my smartphone outside in the rain and it got damaged. I am extremely fed up about this.,Smartphone,Web Form
+UPL-00487,2026-09-22,I cannot delete my account as the button does nothing. I would like to suggest adding more payment options.,Home Router,Phone
+UPL-00488,2026-09-22,"The courier left my laptop outside in the rain and it got damaged. The tracking page still says in transit. Happy with the brand otherwise, thanks in advance.",Laptop,Email
+UPL-00489,2026-09-22,My credit card was charged after I cancelled my plan. The amount differs from the confirmation email. I am really frustrated about this.,Streaming Subscription,Web Form
+UPL-00490,2026-09-22,The packaging uses too much plastic. It happened again yesterday. Worst experience ever.,Smart Speaker,Web Form
+UPL-00491,2026-09-22,I was charged twice for my streaming subscription this month. I attached the statement for reference. I have been a customer for 3 years. Thanks to your staff for the friendly service.,Streaming Subscription,Web Form
+UPL-00492,2026-09-23,The app freezes on startup after the latest update. My account shows the wrong subscription tier. Reporting this for your records.,Smartphone,Web Form
+UPL-00493,2026-09-23,Your representative promised a follow up that never happened. I cancelled within the trial period but you refuse to refund me. The manager on duty was unavailable. I have been a customer for 1 years. I am very frustrated about this.,Fitness Tracker,Social Media
+UPL-00494,2026-09-23,My refund was approved but the money never reached my account. It happened again yesterday. Worst experience ever.,Streaming Subscription,Social Media
+UPL-00495,2026-09-23,I could not find the product information I was looking for. I have used the site on several different browsers. I ordered this as a gift. I am totally angry about this.,Smart Speaker,Phone
+UPL-00496,2026-09-23,The software crashes every time I open the settings page. I already restarted the device twice. Could you investigate this as soon as possible?,Home Router,Email
+UPL-00497,2026-09-23,Items from my smartphone order were missing from the shipment. I need this resolved before the weekend. I am absolutely frustrated about this.,Smartphone,Social Media
+UPL-00498,2026-09-23,My invoice shows an incorrect amount for the streaming subscription. The invoice number is printed on the second page. It happened again yesterday. I am really upset about this.,Streaming Subscription,Social Media
+UPL-00499,2026-09-23,The smart speaker overheats and shuts down randomly. The warranty card is still in the box.,Smart Speaker,App Store
+UPL-00500,2026-09-23,My loyalty points vanished from my account. The profile page loads but shows no data.,Smartphone,Phone

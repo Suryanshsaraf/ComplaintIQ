@@ -1,0 +1,14 @@
+fastapi>=0.110,<1
+uvicorn[standard]>=0.27
+pydantic>=2.5,<3
+SQLAlchemy>=2.0,<2.1
+python-multipart>=0.0.9
+pandas>=2.0,<3
+numpy>=1.24,<2
+scikit-learn>=1.4,<1.6
+scipy>=1.10
+statsmodels>=0.14
+joblib>=1.3
+httpx>=0.27
+pytest>=8
+# optional, for PostgreSQL: psycopg2-binary
