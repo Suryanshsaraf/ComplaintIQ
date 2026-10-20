@@ -43,7 +43,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="ComplaintIQ API", version="1.0.0", lifespan=lifespan,
               description="Customer complaint intelligence: NLP classification, topics, clustering, anomaly "
                           "detection, forecasting and alerting. Bundled data is synthetic.")
-app.add_middleware(CORSMiddleware, allow_origins=CORS_ORIGINS, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=CORS_ORIGINS, allow_origin_regex=r"^https?://.*", allow_methods=["*"], allow_headers=["*"])
 for r in (dashboard, complaints, intelligence, alerts, datasets):
     app.include_router(r.router)
 

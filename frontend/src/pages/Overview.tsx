@@ -1,36 +1,65 @@
-import { AlertTriangle, ArrowDownRight, ArrowUpRight, BellRing, Smile, TrendingUp, Users } from "lucide-react";
+import { Activity, AlertTriangle, ArrowDownRight, ArrowUpRight, BellRing, ChevronRight, Layers, Radio, ShieldCheck, Smile, Sparkles, TrendingUp, Users } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { CategoryBars, ForecastChart, SentimentDonut, SimpleBars, VolumeTrend } from "@/components/charts";
+import { CategoryBars, SentimentDonut, SimpleBars, VolumeTrend } from "@/components/charts";
 import { LivePredictBox } from "@/components/LivePredictBox";
-import { Async, Badge, Card, CardContent, CardDescription, CardHeader, CardTitle, Empty, ErrorBox, Notice, PageHeader, Select, SeverityBadge, Skeleton, Tabs } from "@/components/ui";
+import { Async, Badge, Card, CardContent, CardDescription, CardHeader, CardTitle, Empty, ErrorBox, Notice, SeverityBadge, Skeleton, Tabs } from "@/components/ui";
 import { useApi } from "@/lib/api";
 import { cn, fmtDate, fmtNum, fmtPct } from "@/lib/utils";
 
 function Delta({ value, suffix = "%", goodWhenDown = false }: { value: number | null | undefined; suffix?: string; goodWhenDown?: boolean }) {
-  if (value === null || value === undefined) return <span className="text-xs text-muted-foreground">no prior period</span>;
+  if (value === null || value === undefined) return <span className="text-[11px] text-muted-foreground">benchmark starting</span>;
   const up = value > 0;
   const bad = goodWhenDown ? up : !up;
   const Icon = up ? ArrowUpRight : ArrowDownRight;
   return (
-    <span className={cn("inline-flex items-center text-xs font-medium", value === 0 ? "text-muted-foreground" : bad ? "text-red-600" : "text-emerald-600")}>
+    <span
+      className={cn(
+        "inline-flex items-center gap-0.5 rounded px-1.5 py-0.5 text-[11px] font-semibold",
+        value === 0
+          ? "bg-muted text-muted-foreground"
+          : bad
+          ? "bg-red-500/10 text-red-600 dark:text-red-400"
+          : "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+      )}
+    >
       <Icon className="h-3 w-3" />
-      {Math.abs(value).toLocaleString(undefined, { maximumFractionDigits: 2 })}
-      {suffix} vs prior period
+      {Math.abs(value).toLocaleString(undefined, { maximumFractionDigits: 1 })}{suffix}
     </span>
   );
 }
 
-function Kpi({ label, value, icon: Icon, children }: { label: string; value: string; icon: any; children: React.ReactNode }) {
+function Kpi({
+  label,
+  value,
+  icon: Icon,
+  iconColor,
+  iconBg,
+  subtext,
+  children,
+}: {
+  label: string;
+  value: string;
+  icon: any;
+  iconColor: string;
+  iconBg: string;
+  subtext?: string;
+  children?: React.ReactNode;
+}) {
   return (
-    <Card>
-      <CardContent className="pt-5">
-        <div className="flex items-center justify-between text-muted-foreground">
-          <span className="text-xs font-medium uppercase tracking-wide">{label}</span>
-          <Icon className="h-4 w-4" />
+    <Card className="relative overflow-hidden border-border/80 shadow-sm transition-all hover:shadow-md">
+      <CardContent className="p-4">
+        <div className="flex items-center justify-between">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">{label}</span>
+          <div className={cn("flex h-8 w-8 items-center justify-center rounded-lg", iconBg)}>
+            <Icon className={cn("h-4 w-4", iconColor)} />
+          </div>
         </div>
-        <p className="mt-2 text-3xl font-semibold tracking-tight">{value}</p>
-        <div className="mt-1">{children}</div>
+        <div className="mt-2 flex items-baseline justify-between">
+          <p className="text-2xl font-bold tracking-tight text-foreground">{value}</p>
+          {children}
+        </div>
+        {subtext && <p className="mt-1 text-[11px] text-muted-foreground">{subtext}</p>}
       </CardContent>
     </Card>
   );
@@ -40,61 +69,138 @@ export default function Overview() {
   const navigate = useNavigate();
   const [days, setDays] = useState(30);
   const [gran, setGran] = useState("day");
+  const [distTab, setDistTab] = useState("categories");
+  const [signalTab, setSignalTab] = useState("alerts");
+
   const summary = useApi<any>(`/api/dashboard/summary?days=${days}`);
   const trends = useApi<any>(`/api/dashboard/trends?days=${Math.max(days * 2, 60)}&granularity=${gran}`);
 
   return (
-    <div>
-      <PageHeader
-        title="Overview"
-        subtitle={summary.data?.as_of ? `Data through ${fmtDate(summary.data.as_of)} · compared with the previous ${days} days` : "Complaint intelligence at a glance"}
-        actions={
-          <Select aria-label="Period" value={days} onChange={(e) => setDays(Number(e.target.value))}>
-            <option value={7}>Last 7 days</option>
-            <option value={30}>Last 30 days</option>
-            <option value={90}>Last 90 days</option>
-          </Select>
-        }
-      />
+    <div className="space-y-5">
+      {/* Top Header & Status Ribbon */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b pb-4">
+        <div>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-2xl font-extrabold tracking-tight">Overview</h1>
+            <Badge className="border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-medium gap-1.5 px-2 py-0.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              Live Monitoring
+            </Badge>
+          </div>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {summary.data?.as_of
+              ? `Window through ${fmtDate(summary.data.as_of)} · Benchmark vs prior ${days} days`
+              : "Customer complaint intelligence & early-warning anomaly signals"}
+          </p>
+        </div>
+
+        {/* Time period filter pills */}
+        <div className="flex items-center gap-2">
+          <Tabs
+            tabs={[
+              { id: "7", label: "7D" },
+              { id: "30", label: "30D" },
+              { id: "90", label: "90D" },
+            ]}
+            value={String(days)}
+            onChange={(v) => setDays(Number(v))}
+          />
+        </div>
+      </div>
+
       <Async state={summary}>
         {(s) =>
           s.empty ? (
             <Card>
-              <Empty title="No complaints yet" hint="Import a CSV in the Complaint Explorer, or re-generate the synthetic demo dataset." />
+              <Empty
+                title="No complaints yet"
+                hint="Import a CSV in the Complaint Explorer, or re-generate the synthetic demo dataset."
+              />
             </Card>
           ) : (
-            <div className="space-y-6">
+            <div className="space-y-5">
+              {/* Demo Mode Notice */}
               {s.data.is_fully_synthetic && (
-                <Notice>Demo mode: all data shown is <b>synthetic</b> (template-generated with injected incident spikes). Import your own CSV in the Complaint Explorer to analyse real complaints.</Notice>
+                <Notice>
+                  <b>Demo Environment:</b> Bundled dataset includes injected incidents (Billing double-charges, carrier backlogs, and app login bug) to demonstrate statistical anomaly detection.
+                </Notice>
               )}
-              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                <Kpi label="Total complaints" value={fmtNum(s.kpis.total.value)} icon={Users}>
+
+              {/* Row 1: KPI Ribbon (4 concise cards) */}
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                <Kpi
+                  label="Inbound Volume"
+                  value={fmtNum(s.kpis.total.value)}
+                  icon={Users}
+                  iconColor="text-indigo-600 dark:text-indigo-400"
+                  iconBg="bg-indigo-500/10"
+                  subtext="Complaints in active window"
+                >
                   <Delta value={s.kpis.total.change_pct} goodWhenDown />
                 </Kpi>
-                <Kpi label="Negative sentiment" value={fmtPct(s.kpis.negative_pct.value)} icon={AlertTriangle}>
+
+                <Kpi
+                  label="Negative Sentiment"
+                  value={fmtPct(s.kpis.negative_pct.value)}
+                  icon={AlertTriangle}
+                  iconColor="text-rose-600 dark:text-rose-400"
+                  iconBg="bg-rose-500/10"
+                  subtext="Model-classified negative polarity"
+                >
                   <Delta value={s.kpis.negative_pct.change_pts} suffix=" pts" goodWhenDown />
                 </Kpi>
-                <Kpi label="Avg sentiment score" value={s.kpis.avg_sentiment.value.toFixed(2)} icon={Smile}>
+
+                <Kpi
+                  label="Avg Sentiment Score"
+                  value={s.kpis.avg_sentiment.value.toFixed(2)}
+                  icon={Smile}
+                  iconColor="text-emerald-600 dark:text-emerald-400"
+                  iconBg="bg-emerald-500/10"
+                  subtext="Bounded in [-1.0 to +1.0]"
+                >
                   <Delta value={s.kpis.avg_sentiment.change} suffix="" />
                 </Kpi>
-                <Kpi label="Active alerts" value={String(s.kpis.active_alerts.value)} icon={BellRing}>
-                  <span className="text-xs text-muted-foreground">{s.kpis.active_alerts.critical_high} critical / high</span>
+
+                <Kpi
+                  label="Active Warnings"
+                  value={String(s.kpis.active_alerts.value)}
+                  icon={BellRing}
+                  iconColor="text-amber-600 dark:text-amber-400"
+                  iconBg="bg-amber-500/10"
+                  subtext={`${s.kpis.active_alerts.critical_high} High / Critical priority`}
+                >
+                  {s.kpis.active_alerts.critical_high > 0 && (
+                    <Badge className="border-red-500/30 bg-red-500/10 text-red-600 dark:text-red-400 text-[10px] font-bold">
+                      ACTION REQ
+                    </Badge>
+                  )}
                 </Kpi>
               </div>
 
-              {/* Interactive Live Complaint Classifier */}
-              <LivePredictBox />
-
-              <div className="grid gap-6 lg:grid-cols-3">
-                <Card className="lg:col-span-2">
-                  <CardHeader className="flex-row items-center justify-between">
+              {/* Row 2: Command Center (Volume Trend & Interactive Live AI Classifier) */}
+              <div className="grid gap-5 lg:grid-cols-12 items-start">
+                {/* Left (7 cols): Hero Volume Trend Chart */}
+                <Card className="lg:col-span-7 flex flex-col border-border/80 shadow-sm">
+                  <CardHeader className="flex-row items-center justify-between pb-2 border-b">
                     <div>
-                      <CardTitle>Complaint volume</CardTitle>
-                      <CardDescription>Total vs. negative complaints · Click a date point to drill down in Explorer</CardDescription>
+                      <CardTitle className="text-sm font-semibold flex items-center gap-1.5">
+                        <TrendingUp className="h-4 w-4 text-primary" />
+                        Inbound Volume & Negative Rate
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        Daily complaint count vs negative volume · Click points to drill down
+                      </CardDescription>
                     </div>
-                    <Tabs tabs={[{ id: "day", label: "Daily" }, { id: "week", label: "Weekly" }]} value={gran} onChange={setGran} />
+                    <Tabs
+                      tabs={[
+                        { id: "day", label: "Daily" },
+                        { id: "week", label: "Weekly" },
+                      ]}
+                      value={gran}
+                      onChange={setGran}
+                    />
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pt-3">
                     {trends.error ? (
                       <ErrorBox message={trends.error} onRetry={trends.reload} />
                     ) : trends.data ? (
@@ -106,136 +212,232 @@ export default function Overview() {
                       <Skeleton className="h-64" />
                     )}
                   </CardContent>
+                  <div className="border-t bg-muted/20 px-4 py-2 flex items-center justify-between text-xs text-muted-foreground rounded-b-lg">
+                    <span>💡 Tip: Click any spike on the chart to filter Explorer</span>
+                    <button
+                      onClick={() => navigate("/explorer")}
+                      className="text-primary font-medium hover:underline flex items-center gap-0.5"
+                    >
+                      Open Explorer →
+                    </button>
+                  </div>
                 </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Categories</CardTitle>
-                    <CardDescription>Predicted category · Click bar to filter Explorer</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <CategoryBars
-                      data={s.categories}
-                      onCategoryClick={(c) => navigate(`/explorer?category=${encodeURIComponent(c)}`)}
+
+                {/* Right (5 cols): Live AI Classifier Widget */}
+                <div className="lg:col-span-5">
+                  <LivePredictBox className="border-border/80 shadow-sm" />
+                </div>
+              </div>
+
+              {/* Row 3: Analytical Breakdowns & Intelligence Signals */}
+              <div className="grid gap-5 lg:grid-cols-12 items-start">
+                {/* Left Card (6 cols): Operational Distributions */}
+                <Card className="lg:col-span-6 flex flex-col border-border/80 shadow-sm">
+                  <CardHeader className="flex-row items-center justify-between border-b pb-2.5">
+                    <div>
+                      <CardTitle className="text-sm font-semibold flex items-center gap-1.5">
+                        <Layers className="h-4 w-4 text-primary" />
+                        Operational Distributions
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        Breakdown across categories, sentiment mix, and channels
+                      </CardDescription>
+                    </div>
+                    <Tabs
+                      tabs={[
+                        { id: "categories", label: "Categories" },
+                        { id: "sentiment", label: "Sentiment" },
+                        { id: "channels", label: "Channels" },
+                      ]}
+                      value={distTab}
+                      onChange={setDistTab}
                     />
+                  </CardHeader>
+                  <CardContent className="pt-3 min-h-[300px]">
+                    {distTab === "categories" && (
+                      <div className="space-y-1.5">
+                        <CategoryBars
+                          data={s.categories}
+                          onCategoryClick={(c) => navigate(`/explorer?category=${encodeURIComponent(c)}`)}
+                        />
+                        <p className="text-[11px] text-muted-foreground text-center">
+                          Click any bar to filter complaints by that category
+                        </p>
+                      </div>
+                    )}
+                    {distTab === "sentiment" && (
+                      <div className="space-y-3 pt-2">
+                        <SentimentDonut
+                          data={s.sentiment}
+                          onSentimentClick={(sent) => navigate(`/explorer?sentiment=${sent}`)}
+                        />
+                        <div className="grid grid-cols-3 gap-2 text-center text-xs pt-1">
+                          <div
+                            onClick={() => navigate("/explorer?sentiment=negative")}
+                            className="cursor-pointer rounded-lg border p-2 transition-colors hover:border-red-500/50 hover:bg-red-500/5"
+                          >
+                            <span className="text-muted-foreground block text-[11px]">Negative</span>
+                            <span className="font-bold text-red-600 dark:text-red-400">
+                              {fmtNum(s.sentiment.find((x: any) => x.sentiment === "negative")?.count || 0)}
+                            </span>
+                          </div>
+                          <div
+                            onClick={() => navigate("/explorer?sentiment=neutral")}
+                            className="cursor-pointer rounded-lg border p-2 transition-colors hover:border-amber-500/50 hover:bg-amber-500/5"
+                          >
+                            <span className="text-muted-foreground block text-[11px]">Neutral</span>
+                            <span className="font-bold text-amber-500">
+                              {fmtNum(s.sentiment.find((x: any) => x.sentiment === "neutral")?.count || 0)}
+                            </span>
+                          </div>
+                          <div
+                            onClick={() => navigate("/explorer?sentiment=positive")}
+                            className="cursor-pointer rounded-lg border p-2 transition-colors hover:border-emerald-500/50 hover:bg-emerald-500/5"
+                          >
+                            <span className="text-muted-foreground block text-[11px]">Positive</span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                              {fmtNum(s.sentiment.find((x: any) => x.sentiment === "positive")?.count || 0)}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {distTab === "channels" && (
+                      <div className="space-y-1.5 pt-2">
+                        <SimpleBars data={s.channels} x="channel" y="count" color="#009e73" />
+                        <p className="text-[11px] text-muted-foreground text-center">
+                          Distribution across customer contact points
+                        </p>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
-              </div>
 
-              <div className="grid gap-6 lg:grid-cols-3">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Sentiment</CardTitle>
-                    <CardDescription>Predicted mix · Click slice to filter</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <SentimentDonut
-                      data={s.sentiment}
-                      onSentimentClick={(sent) => navigate(`/explorer?sentiment=${sent}`)}
+                {/* Right Card (6 cols): Early Warning & Incident Signals */}
+                <Card className="lg:col-span-6 flex flex-col border-border/80 shadow-sm">
+                  <CardHeader className="flex-row items-center justify-between border-b pb-2.5">
+                    <div>
+                      <CardTitle className="text-sm font-semibold flex items-center gap-1.5">
+                        <Radio className="h-4 w-4 text-amber-500" />
+                        Early Warning Signals
+                      </CardTitle>
+                      <CardDescription className="text-xs">
+                        Anomaly episodes, active alert rules & emerging surges
+                      </CardDescription>
+                    </div>
+                    <Tabs
+                      tabs={[
+                        { id: "alerts", label: `Alerts (${s.priority_alerts.length})` },
+                        { id: "spikes", label: `Spikes (${s.anomalies.length})` },
+                        { id: "emerging", label: "Emerging" },
+                      ]}
+                      value={signalTab}
+                      onChange={setSignalTab}
                     />
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Channels</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <SimpleBars data={s.channels} x="channel" y="count" color="#009e73" />
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Top recurring topics</CardTitle>
-                    <CardDescription>NMF topics · change vs prior period</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-2">
-                    {s.topics.slice(0, 6).map((t: any) => (
-                      <div key={t.topic_id} className="flex items-center justify-between gap-2 text-sm">
-                        <span className="truncate" title={t.terms.join(", ")}>{t.label}</span>
-                        <span className="flex shrink-0 items-center gap-2">
-                          <b>{fmtNum(t.count)}</b>
-                          {t.change_pct !== null && <span className={cn("text-xs", t.change_pct > 15 ? "text-red-600" : "text-muted-foreground")}>{t.change_pct > 0 ? "+" : ""}{t.change_pct}%</span>}
-                        </span>
+                  <CardContent className="pt-3 min-h-[300px] max-h-[330px] overflow-y-auto space-y-2">
+                    {signalTab === "alerts" && (
+                      <div className="space-y-2">
+                        {s.priority_alerts.length ? (
+                          s.priority_alerts.map((a: any) => (
+                            <Link
+                              to="/alerts"
+                              key={a.id}
+                              className="block rounded-lg border p-2.5 transition-colors hover:border-primary/50 hover:bg-muted/40"
+                            >
+                              <div className="flex items-center justify-between gap-2">
+                                <div className="flex items-center gap-1.5">
+                                  <SeverityBadge severity={a.severity} />
+                                  <span className="text-xs font-semibold">{a.title}</span>
+                                </div>
+                                <span className="text-[11px] text-primary flex items-center">
+                                  Review <ChevronRight className="h-3 w-3" />
+                                </span>
+                              </div>
+                              <p className="mt-1 line-clamp-2 text-[11px] text-muted-foreground">
+                                {a.explanation}
+                              </p>
+                            </Link>
+                          ))
+                        ) : (
+                          <Empty title="No active alerts" hint="All metrics are within statistical baselines." />
+                        )}
                       </div>
-                    ))}
-                    {!s.topics.length && <Empty title="No topics" />}
-                  </CardContent>
-                </Card>
-              </div>
+                    )}
 
-              <div className="grid gap-6 lg:grid-cols-3">
-                <Card className="lg:col-span-2">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2"><TrendingUp className="h-4 w-4" /> Historical vs forecast volume</CardTitle>
-                    <CardDescription>
-                      {s.forecast?.status === "ok" ? `${s.forecast.selected_model} · next 14 days with 80% interval` : "Forecast unavailable"}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    {s.forecast?.status === "ok" ? <ForecastChart history={s.forecast.history} forecast={s.forecast.forecast} /> : <Empty title="Not enough history to forecast" hint={s.forecast?.reason} />}
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Emerging issues</CardTitle>
-                    <CardDescription>Terms surging vs. the prior 60-day baseline · Click to inspect</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {s.emerging.length ? s.emerging.map((e: any) => (
-                      <div
-                        key={e.category}
-                        onClick={() => navigate(`/explorer?category=${encodeURIComponent(e.category)}`)}
-                        className="cursor-pointer rounded-md border p-3 transition-colors hover:border-primary/50 hover:bg-muted/40"
-                        title={`Click to view ${e.category} complaints`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <p className="text-sm font-medium">{e.category}</p>
-                          <span className="text-[11px] text-primary">View in Explorer →</span>
-                        </div>
-                        <div className="mt-1.5 flex flex-wrap gap-1">
-                          {e.terms.slice(0, 5).map((t: any) => <Badge key={t.term} className="bg-accent text-accent-foreground">{t.term} · {t.ratio}x</Badge>)}
-                        </div>
+                    {signalTab === "spikes" && (
+                      <div className="space-y-1.5">
+                        {s.anomalies.length ? (
+                          s.anomalies.slice(0, 7).map((a: any) => (
+                            <div
+                              key={a.id}
+                              onClick={() =>
+                                navigate(
+                                  `/explorer?date_from=${a.day}&date_to=${a.day}${
+                                    a.category ? `&category=${encodeURIComponent(a.category)}` : ""
+                                  }`
+                                )
+                              }
+                              className="cursor-pointer rounded-lg border p-2 text-xs transition-colors hover:border-primary/50 hover:bg-muted/40 flex items-center justify-between"
+                              title="Click to view complaints on this date"
+                            >
+                              <div className="min-w-0 pr-2">
+                                <span className="font-semibold text-primary underline-offset-2 hover:underline">
+                                  {fmtDate(a.day)}
+                                </span>
+                                {a.category && (
+                                  <span className="ml-1.5 font-medium text-foreground">· {a.category}</span>
+                                )}
+                                <p className="mt-0.5 text-[11px] text-muted-foreground line-clamp-1 truncate">
+                                  {a.explanation}
+                                </p>
+                              </div>
+                              <Badge className="bg-secondary shrink-0 text-[10px]">
+                                {a.method === "isolation_forest" ? "Isolation Forest" : "z-score"}
+                              </Badge>
+                            </div>
+                          ))
+                        ) : (
+                          <Empty title="No anomalies in window" />
+                        )}
                       </div>
-                    )) : <Empty title="Nothing emerging" hint="No terms are surging beyond the baseline." />}
-                  </CardContent>
-                </Card>
-              </div>
+                    )}
 
-              <div className="grid gap-6 lg:grid-cols-2">
-                <Card>
-                  <CardHeader className="flex-row items-center justify-between">
-                    <div><CardTitle>Priority alerts</CardTitle><CardDescription>Highest-severity active alerts</CardDescription></div>
-                    <Link to="/alerts" className="text-xs font-medium text-primary hover:underline">Open Alert Center →</Link>
-                  </CardHeader>
-                  <CardContent className="space-y-2">
-                    {s.priority_alerts.length ? s.priority_alerts.map((a: any) => (
-                      <Link to="/alerts" key={a.id} className="block rounded-md border p-3 hover:bg-muted/50">
-                        <div className="flex items-center gap-2"><SeverityBadge severity={a.severity} /><span className="text-sm font-medium">{a.title}</span></div>
-                        <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{a.explanation}</p>
-                      </Link>
-                    )) : <Empty title="No active alerts" />}
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Unusual spikes (last 30 days)</CardTitle>
-                    <CardDescription>Statistical + Isolation Forest anomalies · Click to inspect date</CardDescription>
-                  </CardHeader>
-                  <CardContent className="max-h-80 space-y-2 overflow-y-auto">
-                    {s.anomalies.length ? s.anomalies.map((a: any) => (
-                      <div
-                        key={a.id}
-                        onClick={() => navigate(`/explorer?date_from=${a.day}&date_to=${a.day}${a.category ? `&category=${encodeURIComponent(a.category)}` : ""}`)}
-                        className="cursor-pointer rounded-md border p-3 text-sm transition-colors hover:border-primary/50 hover:bg-muted/40"
-                        title="Click to view complaints on this date in Explorer"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-medium text-primary underline-offset-2 hover:underline">{fmtDate(a.day)}{a.category ? ` · ${a.category}` : ""}</span>
-                          <Badge className="bg-secondary">{a.method === "isolation_forest" ? "Isolation Forest" : "Rolling z-score"}</Badge>
-                        </div>
-                        <p className="mt-1 text-xs text-muted-foreground">{a.explanation}</p>
+                    {signalTab === "emerging" && (
+                      <div className="space-y-2">
+                        {s.emerging.length ? (
+                          s.emerging.map((e: any) => (
+                            <div
+                              key={e.category}
+                              onClick={() => navigate(`/explorer?category=${encodeURIComponent(e.category)}`)}
+                              className="cursor-pointer rounded-lg border p-2.5 transition-colors hover:border-primary/50 hover:bg-muted/40"
+                              title={`Click to view ${e.category} complaints`}
+                            >
+                              <div className="flex items-center justify-between">
+                                <span className="text-xs font-semibold">{e.category}</span>
+                                <span className="text-[11px] text-primary">Drill Down →</span>
+                              </div>
+                              <div className="mt-1.5 flex flex-wrap gap-1">
+                                {e.terms.slice(0, 5).map((t: any) => (
+                                  <Badge key={t.term} className="bg-accent text-accent-foreground text-[11px] py-0 font-normal">
+                                    {t.term} <span className="opacity-70 ml-1">· {t.ratio}x</span>
+                                  </Badge>
+                                ))}
+                              </div>
+                            </div>
+                          ))
+                        ) : (
+                          <Empty title="Nothing emerging" hint="No terms surging beyond baseline threshold." />
+                        )}
                       </div>
-                    )) : <Empty title="No anomalies in the last 30 days" />}
+                    )}
                   </CardContent>
+                  <div className="border-t bg-muted/20 px-4 py-2 flex items-center justify-between text-xs text-muted-foreground rounded-b-lg">
+                    <span>Deep algorithms available in ML Intelligence</span>
+                    <Link to="/alerts" className="text-primary font-medium hover:underline">
+                      Alert Center →
+                    </Link>
+                  </div>
                 </Card>
               </div>
             </div>

@@ -128,7 +128,7 @@ export function LivePredictBox({ className }: { className?: string }) {
 
         {/* Prediction Results */}
         {result && (
-          <div className="space-y-4 rounded-lg border bg-muted/30 p-4 transition-all">
+          <div className="space-y-3.5 rounded-lg border bg-muted/30 p-3.5 transition-all max-h-[310px] overflow-y-auto">
             {/* Top result badges */}
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-md border bg-card p-3">
