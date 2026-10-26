@@ -122,7 +122,7 @@ export default function Overview() {
               {/* Demo Mode Notice */}
               {s.data.is_fully_synthetic && (
                 <Notice>
-                  <b>Demo Environment:</b> Bundled dataset includes injected incidents (Billing double-charges, carrier backlogs, and app login bug) to demonstrate statistical anomaly detection.
+                  <b>Regulatory Sandbox:</b> Bundled banking dataset includes realistic operational incidents (Core-banking overdraft glitches, UPI switch timeouts, and card-skimming fraud spikes) to demonstrate statistical anomaly detection.
                 </Notice>
               )}
 

@@ -19,20 +19,20 @@ interface PredictResponse {
 
 const PRESET_COMPLAINTS = [
   {
-    label: "💳 Double charge",
-    text: "I was charged twice on my credit card for my monthly renewal and support has not responded to my email.",
+    label: "💳 Unauthorized Card Charge",
+    text: "I noticed an unauthorized charge of $450 from an unknown foreign merchant on my credit card that I never made.",
   },
   {
-    label: "🚚 Lost package",
-    text: "The delivery status shows package was delivered yesterday, but no package arrived at my door or mailbox.",
+    label: "🏧 ATM Cash Failure",
+    text: "The ATM debited $300 from my savings account but no cash was dispensed from the terminal.",
   },
   {
-    label: "📱 App crash on login",
-    text: "After installing the latest app version, I get stuck in a login loop and the app crashes with token expired.",
+    label: "🏠 Mortgage Escrow Dispute",
+    text: "My mortgage servicer miscalculated the escrow balance for property taxes and double debited my monthly EMI.",
   },
   {
-    label: "💸 Refund delay",
-    text: "I returned the defective item two weeks ago as instructed, but still no refund credited to my bank account.",
+    label: "🔐 Net Banking Lock",
+    text: "My net banking login is completely blocked and password reset fails repeatedly despite entering the correct OTP.",
   },
 ];
 
@@ -108,7 +108,7 @@ export function LivePredictBox({ className }: { className?: string }) {
                 handlePredict();
               }
             }}
-            placeholder="Type customer complaint here... (e.g. 'I was charged twice on my card and nobody answered the call!')"
+            placeholder="Type customer complaint here... (e.g. 'I was debited an overdraft penalty even though my account had sufficient balance!')"
             className="w-full resize-none rounded-md border border-input bg-card p-3 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           />
           <div className="flex items-center justify-between">

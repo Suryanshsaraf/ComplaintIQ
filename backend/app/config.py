@@ -30,6 +30,14 @@ SYNTHETIC_ROWS = int(os.getenv("SYNTHETIC_ROWS", "7000"))
 CORS_ORIGINS = [o.strip() for o in os.getenv(
     "CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")]
 
-CATEGORIES = ["Billing", "Delivery", "Product Quality", "Technical Support", "Refunds",
-              "Account Issues", "Customer Service", "Other"]
+CATEGORIES = [
+    "Unauthorized Fraud",
+    "Billing & Fees",
+    "Loan & Mortgage",
+    "Transaction Failure",
+    "Account & KYC",
+    "Credit Reporting",
+    "Customer Support",
+    "Other",
+]
 SENTIMENTS = ["negative", "neutral", "positive"]

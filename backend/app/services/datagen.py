@@ -1,4 +1,4 @@
-"""Reproducible SYNTHETIC complaint generator with controlled, documented trend spikes.
+"""Reproducible SYNTHETIC Banking & Financial complaint generator with controlled, documented trend spikes.
 
 Everything produced here is synthetic (template-based) and is flagged `is_synthetic=True` in the database.
 Labels are noisy on purpose (cross-category sentences, mixed-sentiment closers) so metrics are not trivially 100%.
@@ -10,124 +10,224 @@ import pandas as pd
 
 END_DATE = date(2026, 10, 15)  # fixed so the dataset (and tests) are reproducible
 
-PRODUCTS = {"Smartphone": 1.0, "Laptop": 0.8, "Wireless Earbuds": 0.9, "Smart Watch": 0.7, "Home Router": 0.7,
-            "Streaming Subscription": 1.1, "Fitness Tracker": 0.6, "Smart Speaker": 0.6}
-CHANNELS = {"Email": 0.28, "Phone": 0.2, "Web Form": 0.18, "Chat": 0.16, "Social Media": 0.12, "App Store": 0.06}
-BASE_MIX = {"Billing": .17, "Delivery": .19, "Product Quality": .17, "Technical Support": .14, "Refunds": .10,
-            "Account Issues": .09, "Customer Service": .09, "Other": .05}
+PRODUCTS = {
+    "Credit Card": 1.1,
+    "Savings Account": 1.0,
+    "Home Mortgage": 0.9,
+    "Personal Loan": 0.8,
+    "UPI & Net Banking": 1.0,
+    "Debit Card & ATM": 0.8,
+    "Fixed Deposit": 0.6,
+    "Student Loan": 0.7,
+}
+
+CHANNELS = {
+    "Mobile App": 0.30,
+    "Net Banking": 0.22,
+    "Phone Banking": 0.20,
+    "Branch Walk-in": 0.14,
+    "Email": 0.10,
+    "Ombudsman": 0.04,
+}
+
+BASE_MIX = {
+    "Unauthorized Fraud": 0.18,
+    "Billing & Fees": 0.18,
+    "Loan & Mortgage": 0.16,
+    "Transaction Failure": 0.16,
+    "Account & KYC": 0.12,
+    "Credit Reporting": 0.10,
+    "Customer Support": 0.06,
+    "Other": 0.04,
+}
+
 WEEKDAY = [1.15, 1.10, 1.05, 1.0, 0.95, 0.75, 0.70]
 
 CORE = {
-    "Billing": [
-        "I was charged twice for my {p} this month.", "My invoice shows an incorrect amount for the {p}.",
-        "There is an unexpected fee on my bill that nobody explained.",
-        "The price I was quoted for the {p} does not match what I was billed.",
-        "My credit card was charged after I cancelled my plan.",
-        "I received a late payment penalty even though I paid on time.", "The tax on my invoice looks wrong.",
-        "Autopay took money from my bank account on the wrong date.",
-        "My monthly statement includes charges I do not recognize.", "I was overcharged on my last {p} payment."],
-    "Delivery": [
-        "My {p} order has not arrived and the tracking has not updated in days.",
-        "The package was delivered to the wrong address.",
-        "Delivery was supposed to take 3 days but it has been two weeks.",
-        "The courier left my {p} outside in the rain and it got damaged.",
-        "I was told the order shipped but there is no tracking number.",
-        "The delivery driver never showed up for my scheduled slot.", "My parcel arrived with the box crushed.",
-        "Items from my {p} order were missing from the shipment.", "Shipping is far slower than promised.",
-        "The carrier marked my order as delivered but I never received it."],
-    "Product Quality": [
-        "The {p} stopped working after just two weeks.", "The {p} arrived with a cracked screen and scratches.",
-        "The material feels cheap and started falling apart.", "The {p} is defective and makes a loud buzzing noise.",
-        "The battery on my {p} drains within an hour.", "The stitching came loose on first use.",
-        "The {p} overheats and shuts down randomly.", "The color looks nothing like the pictures and the build is flimsy.",
-        "Parts of the {p} were broken out of the box.", "The quality has gone downhill compared to my previous {p}."],
-    "Technical Support": [
-        "I cannot connect my {p} to the app, it keeps showing an error.",
-        "The software crashes every time I open the settings page.",
-        "The firmware update failed and my {p} is stuck on a loading screen.",
-        "I have been unable to pair the device over bluetooth.",
-        "The troubleshooting steps from your guide did not fix the problem.",
-        "The app freezes on startup after the latest update.", "I need help configuring the wifi setup on my {p}.",
-        "The support portal gives a timeout error when I submit a ticket.",
-        "The sync between my devices keeps failing.", "The installation wizard stops at 40 percent with an error code."],
-    "Refunds": [
-        "I returned the {p} three weeks ago and still have not received my refund.",
-        "I was promised a full refund but only got store credit.",
-        "My refund was approved but the money never reached my account.",
-        "The return label you sent does not work so I cannot send back the {p}.",
-        "I requested a refund for the defective {p} and was denied.",
-        "Refund processing is taking much longer than the stated five business days.",
-        "I was only refunded part of the amount I paid.", "Nobody has confirmed my return for the {p}.",
-        "I cancelled within the trial period but you refuse to refund me.", "The refund went to the wrong card."],
-    "Account Issues": [
-        "I cannot log in to my account, the password reset email never arrives.",
-        "My account was locked without any explanation.", "I was unable to update my email address on my profile.",
-        "Someone changed my account details and I did not authorize it.",
-        "The two factor authentication code is never delivered to my phone.",
-        "My account shows the wrong subscription tier.", "I cannot delete my account as the button does nothing.",
-        "My profile data disappeared after I signed in.", "I keep getting logged out of my account every few minutes.",
-        "My loyalty points vanished from my account."],
-    "Customer Service": [
-        "The agent I spoke to was rude and dismissive.", "I have been on hold for over an hour with no answer.",
-        "Nobody replied to my emails for a week.",
-        "I was transferred between three departments and had to repeat myself every time.",
-        "The chat representative closed the conversation without solving anything.",
-        "The support staff gave me conflicting information.", "No one called me back as promised.",
-        "The store employee ignored me when I asked for help with the {p}.",
-        "Your representative promised a follow up that never happened.",
-        "Customer service has been unhelpful and slow to respond."],
+    "Unauthorized Fraud": [
+        "I noticed an unauthorized charge of $450 on my {p} that I never made.",
+        "My {p} was charged by an unknown foreign merchant while the card was in my possession.",
+        "Someone cloned my card and withdrew money from an ATM without any OTP or SMS alert.",
+        "Multiple fraudulent online transactions occurred on my {p} after my details were compromised.",
+        "I reported the stolen {p} immediately, but unauthorized transactions were still cleared by the bank.",
+        "An unapproved debit transaction was deducted from my {p} without two-factor authentication.",
+        "My {p} details were compromised and fraudulent international purchases were posted.",
+        "I received a transaction alert for a cash withdrawal on my {p} that I did not authorize.",
+        "A fraudulent merchant charged my {p} three times in the middle of the night.",
+        "Money was stolen from my {p} despite never sharing my PIN, OTP, or password with anyone.",
+    ],
+    "Billing & Fees": [
+        "I was charged an overdraft penalty fee even though my {p} maintained the required minimum balance.",
+        "My {p} statement shows an unexpected annual maintenance charge that was promised to be waived.",
+        "Autopay deducted the monthly bill twice from my {p} this billing cycle.",
+        "I was billed a late fee penalty despite submitting the full payment before the due date.",
+        "The interest rate applied to my {p} is significantly higher than the rate in my sanction letter.",
+        "Unexpected hidden processing charges and finance charges were deducted from my {p}.",
+        "My monthly statement includes compounding interest charges on already disputed transactions.",
+        "I was overcharged on foreign currency exchange markup fees for my {p}.",
+        "The bank deducted an inactive account penalty without giving any prior notification.",
+        "A recurring auto-debit charge was billed even after I formally cancelled the mandate on my {p}.",
+    ],
+    "Loan & Mortgage": [
+        "My monthly EMI was debited twice for my {p} this month, causing my balance to go negative.",
+        "The loan servicer miscalculated the escrow balance for my property taxes and homeowners insurance.",
+        "I applied for an interest rate reduction on my {p} three months ago and have received no response.",
+        "The loan payoff statement issued for my {p} includes inaccurate prepayment penalty charges.",
+        "My extra principal prepayments were wrongly allocated toward future interest instead of principal reduction.",
+        "The interest rate on my floating rate {p} was increased without the mandated regulatory notice.",
+        "The bank has not released my original property title deeds even though my {p} is fully paid off.",
+        "I was wrongly threatened with foreclosure on my {p} while my loan modification request was under review.",
+        "The amortization schedule for my {p} does not reflect my lump sum prepayments.",
+        "My mortgage servicer delayed paying the county property tax from my escrow account, resulting in fines.",
+    ],
+    "Transaction Failure": [
+        "The ATM debited $300 from my {p} but no cash was dispensed from the machine.",
+        "Money was debited from my {p} via UPI but the beneficiary never received the funds.",
+        "The wire transfer from my {p} has been stuck in pending status for over five business days.",
+        "The POS terminal payment failed at checkout, but the purchase amount was deducted from my {p}.",
+        "IMPS immediate transfer failed with a gateway timeout error and the auto-reversal was not credited.",
+        "An online payment was declined by the merchant, yet the funds remain blocked on my {p}.",
+        "A cheque deposited in my {p} cleared four days ago, but the funds are still showing on hold.",
+        "The NEFT electronic transfer failed due to a bank server error and the funds vanished from my balance.",
+        "The cash deposit machine accepted my cash bundle but did not credit my {p} balance.",
+        "Card swipe failed due to a network timeout, but my account statement shows duplicate debits.",
+    ],
+    "Account & KYC": [
+        "My net banking login is completely blocked and password reset verification fails repeatedly.",
+        "I submitted my updated KYC documents at the branch twice, but my {p} remains frozen.",
+        "The mobile banking app crashes every time I try to authenticate with biometric fingerprint or OTP.",
+        "I cannot add a new beneficiary to my {p} because the SMS verification code is never delivered.",
+        "My account was placed on an administrative debit freeze without prior notice or explanation.",
+        "My joint account permissions were altered without authorized signatures or written consent.",
+        "I am unable to change my registered mobile number and mailing address on my {p}.",
+        "The two-factor authentication token expired and the customer web portal shows a blank screen.",
+        "My debit card was deactivated automatically without any replacement card being dispatched.",
+        "I have been locked out of my online banking profile for five consecutive days.",
+    ],
+    "Credit Reporting": [
+        "The bank reported an inaccurate 30-day delinquency to Experian and Equifax for a bill paid on time.",
+        "An inaccurate settled debt status is still reflecting on my CIBIL credit bureau report.",
+        "The credit limit on my {p} was cut drastically without any written justification or notice.",
+        "My credit score dropped 65 points due to an erroneous late payment report by your operations team.",
+        "A closed {p} is still showing as active with an outstanding balance on my bureau record.",
+        "I filed a formal credit bureau dispute 45 days ago, but the bank has not updated the report.",
+        "The credit bureau report shows an unauthorized hard inquiry initiated by your loan sales department.",
+        "The bank reported me as a defaulter for an account opened fraudulently under my stolen identity.",
+    ],
+    "Customer Support": [
+        "The branch manager was rude, dismissive, and refused to accept my formal dispute letter.",
+        "I was transferred between four phone banking representatives and kept on hold for 50 minutes.",
+        "The grievance redressal officer closed my complaint ticket without contacting me or resolving it.",
+        "The customer service representative gave conflicting and misleading information regarding my dispute.",
+        "I visited the branch three times to submit dispute forms and the staff lost my paperwork.",
+        "Nobody at phone banking support can provide an update on my escalated dispute ticket.",
+    ],
     "Other": [
-        "The website layout is confusing and hard to navigate.", "I would like to suggest adding more payment options.",
-        "Your store was closed during the posted opening hours.", "The newsletter emails are too frequent.",
-        "The packaging uses too much plastic.", "Please offer the {p} in more colors.",
-        "I could not find the product information I was looking for.", "The mobile site is slow on my phone.",
-        "The promotional offer details were unclear.", "Your loyalty program rules are hard to understand."],
+        "The new cheque book requested 3 weeks ago has not arrived at my registered address.",
+        "I requested a physical stamped bank statement for visa verification and it was never delivered.",
+        "I need an official balance certificate and interest certificate for income tax filing.",
+        "I requested to transfer my {p} to a different local branch and the request is stalled.",
+        "The interest rate certificate for income tax deduction contains incorrect account details.",
+    ],
 }
 
 CLOSERS = {
-    "negative": ["This is unacceptable.", "I am extremely frustrated.", "Very disappointed with this experience.",
-                 "Terrible, I want this fixed immediately.", "I am furious and considering leaving.",
-                 "Worst experience ever.", "I am not satisfied at all.", "I am not happy with how this was handled.",
-                 "This is a disgrace and a waste of my time."],
-    "neutral": ["Please advise on next steps.", "Could you look into this?", "I would like an update.",
-                "Kindly let me know how to proceed.", "Reporting this for your records.",
-                "Let me know what information you need.", "Please confirm receipt of this message."],
-    "positive": ["Thank you for the quick help so far.", "I appreciate your team and hope it gets sorted.",
-                 "Great service overall, I just need this resolved.", "Happy with the brand otherwise, thanks in advance.",
-                 "Not bad service so far, thanks.", "No complaints about the staff, they were lovely."],
+    "negative": [
+        "This is unacceptable and I demand an immediate reversal.",
+        "I am escalating this matter to the Banking Ombudsman and Consumer Court.",
+        "Fix this immediately or I will close all my accounts with your bank.",
+        "Worst banking experience ever, completely unprofessional.",
+        "I am not satisfied at all with how this complaint was handled.",
+        "This is a disgrace and a complete waste of my time.",
+    ],
+    "neutral": [
+        "Please advise on the next steps to resolve this.",
+        "Could you please check your backend logs and investigate?",
+        "I would appreciate an urgent update on my ticket.",
+        "Kindly let me know how to proceed with the dispute.",
+        "Reporting this for your regulatory records and internal audit.",
+        "Please confirm receipt of this grievance message.",
+    ],
+    "positive": [
+        "Thank you for the quick help and assistance so far.",
+        "I appreciate your team's support and hope it gets sorted quickly.",
+        "Good banking service overall, I just need this specific error corrected.",
+        "Happy with your branch staff otherwise, thanks in advance.",
+        "Not bad service so far, thanks for looking into this.",
+        "No complaints about the branch staff, they were very courteous.",
+    ],
 }
+
 DETAIL = {
-    "Billing": ["The amount differs from the confirmation email.", "I attached the statement for reference.",
-                "The charge appeared on the billing page of my account.", "My payment was made by visa card.",
-                "The invoice number is printed on the second page."],
-    "Delivery": ["The tracking page still says in transit.", "The shipping address on the label looks correct.",
-                 "The estimated arrival date keeps changing.", "I paid extra for express shipping.",
-                 "A neighbour said no courier had visited the street."],
-    "Product Quality": ["I only used it a handful of times.", "The warranty card is still in the box.",
-                        "There is visible damage near the edge.", "My previous model lasted for years.",
-                        "The finish is peeling off in places."],
-    "Technical Support": ["I already restarted the device twice.", "The error code displayed is unclear.",
-                          "I tried reinstalling the application.", "The status light keeps blinking orange.",
-                          "The manual does not explain this situation."],
-    "Refunds": ["The return was posted over two weeks ago.", "I kept the receipt and the original packaging.",
-                "The bank shows no pending credit.", "The return confirmation email arrived last month.",
-                "I selected the original payment method for the reimbursement."],
-    "Account Issues": ["I use the same email address as always.", "The verification link expired immediately.",
-                       "My username is no longer recognised.", "The profile page loads but shows no data.",
-                       "I cleared my browser cache without any change."],
-    "Customer Service": ["The call lasted nearly forty minutes.", "I was given a reference number but nobody uses it.",
-                         "Each agent asked me the same questions again.", "The email thread has no reply from your side.",
-                         "The manager on duty was unavailable."],
-    "Other": ["I am writing about a general matter.", "This is feedback rather than an urgent request.",
-              "I have used the site on several different browsers.", "A friend had the same impression.",
-              "I hope this can be considered for the future."],
+    "Unauthorized Fraud": [
+        "The transaction took place in another city while I was at work.",
+        "I submitted an affidavit of fraud and blocked the card immediately.",
+        "The merchant name on the statement is completely unknown to me.",
+        "I attached a copy of the police cyber crime complaint report.",
+        "No two-factor verification OTP was ever sent to my registered phone.",
+    ],
+    "Billing & Fees": [
+        "I attached the monthly statement highlighting the disputed penalty charge.",
+        "The original account agreement clearly stated zero annual maintenance charges.",
+        "The transaction timestamp proves the bill was paid 24 hours before the deadline.",
+        "My average quarterly balance was well above the required minimum threshold.",
+        "The customer care agent previously promised a full waiver on this fee.",
+    ],
+    "Loan & Mortgage": [
+        "The escrow analysis statement contains discrepancies in tax disbursements.",
+        "I attached bank transfer receipts confirming timely EMI deductions.",
+        "The loan sanction letter guarantees a lower spread on the benchmark rate.",
+        "The property insurance premium was deducted twice from my escrow account.",
+        "I have written confirmation that all prepayment penalties were waived.",
+    ],
+    "Transaction Failure": [
+        "The ATM terminal number was recorded on the transaction slip.",
+        "The UPI transaction reference number (UTR) confirms funds left my account.",
+        "The merchant provided written proof that the payment failed at their terminal.",
+        "The standard 24-hour auto-reversal SLA has already elapsed.",
+        "The beneficiary bank confirmed they never received the inward remittance.",
+    ],
+    "Account & KYC": [
+        "I have submitted self-attested copies of my government ID and address proof.",
+        "The branch executive stamped my physical KYC submission receipt.",
+        "The error code displayed on screen is AUTH-ERR-403.",
+        "I cleared my browser cookies and reinstalled the mobile banking app.",
+        "I verified that my registered mobile number and email are active.",
+    ],
+    "Credit Reporting": [
+        "I attached the payment receipt proving zero outstanding balance on that date.",
+        "The credit bureau dispute reference ID is still marked as pending bank verification.",
+        "The account in question was settled and closed over six months ago.",
+        "I have a formal No Objection Certificate (NOC) issued by the bank.",
+        "The loan account number mentioned on the bureau report does not belong to me.",
+    ],
+    "Customer Support": [
+        "The call recording will verify the misleading advice given by the representative.",
+        "I was given an escalation token number that support claims does not exist.",
+        "The branch manager refused to provide an acknowledgment stamp on my dispute letter.",
+        "Each representative contradicted what the previous representative told me.",
+        "The supervisor refused to come to the phone after a 45-minute hold.",
+    ],
+    "Other": [
+        "I have been an account holder with this bank for over {n} years.",
+        "I submitted the signed mandate form at the local branch.",
+        "The previous cheque book ran out and I need leaves urgently.",
+        "The tracking number provided for the documents shows no movement.",
+        "I need this documentation completed before the tax filing deadline.",
+    ],
 }
+
 ADV = ["extremely", "really", "very", "absolutely", "deeply", "totally"]
 ADJ = ["frustrated", "disappointed", "annoyed", "upset", "angry", "fed up"]
-CONTEXT = ["I have been a customer for {n} years.", "I contacted you by {c} before.", "This is the second time this has happened.",
-           "I ordered this as a gift.", "It happened again yesterday.", "I need this resolved before the weekend."]
+CONTEXT = [
+    "I have been an account holder for {n} years.",
+    "I contacted you by {c} before.",
+    "This is the second time this issue has occurred this quarter.",
+    "This involves my primary salary account.",
+    "It happened again yesterday.",
+    "I need this resolved before the weekend.",
+]
 
-# vocabulary used by the injected incidents (so topic / emerging-term detection has something real to find)
 def make_closer(rng, sent):
     r = rng.random()
     if r < 0.5:
@@ -135,38 +235,46 @@ def make_closer(rng, sent):
     if sent == "negative":
         return f"I am {rng.choice(ADV)} {rng.choice(ADJ)} about this."
     if sent == "positive":
-        return f"Thanks to {rng.choice(['the team', 'your staff', 'the agent', 'everyone'])} for "                f"{rng.choice(['the quick reply', 'the help so far', 'the friendly service', 'the patience'])}."
-    return f"Could you {rng.choice(['review', 'check', 'investigate', 'look into'])} this "            f"{rng.choice(['today', 'soon', 'this week', 'as soon as possible'])}?"
-
+        return f"Thanks to {rng.choice(['the branch team', 'your staff', 'the officer', 'everyone'])} for {rng.choice(['the quick reply', 'the help so far', 'the courteous service', 'the patience'])}."
+    return f"Could you {rng.choice(['review', 'check', 'investigate', 'look into'])} this {rng.choice(['today', 'soon', 'this week', 'as soon as possible'])}?"
 
 SPIKE_TEXT = {
-    "billing_incident": ["A system error on your side charged me twice on the same day.",
-                         "The duplicate charge from the billing glitch is still on my statement."],
-    "delivery_incident": ["The logistics partner seems overwhelmed and my {p} is stuck at a depot.",
-                          "There is a huge carrier backlog and my {p} order has not moved."],
-    "delivery_recent": ["The carrier backlog at the regional warehouse has delayed my {p} for over a week.",
-                        "My {p} is stuck at the warehouse because of the carrier backlog."],
-    "app_update": ["Since the version 5.2 update the app is stuck in a login loop.",
-                   "After updating to version 5.2 the dashboard shows a blank screen.",
-                   "The latest app update keeps logging me out with a token expired error."],
+    "overdraft_batch_glitch": [
+        "A core banking system glitch double-charged overdraft penalties across my accounts.",
+        "The automated monthly batch run wrongly deducted penalty fees from my {p}.",
+        "My account was debited with multiple unauthorized maintenance fees due to a system bug.",
+    ],
+    "upi_gateway_outage": [
+        "The UPI payment server failed and money debited from my {p} was not credited to recipient.",
+        "All UPI and IMPS transactions on my {p} are failing with banking network timeout error.",
+        "The mobile banking UPI gateway is completely down and transaction amounts are stuck in limbo.",
+    ],
+    "fraud_card_skimming": [
+        "My {p} was compromised in a card skimming attack with unauthorized ATM cash withdrawals.",
+        "Multiple fraudulent foreign transactions were charged to my {p} without OTP confirmation.",
+        "Unapproved debit card transactions drained funds from my {p} while I still have the card.",
+    ],
+    "app_login_loop": [
+        "Since the version 5.2 mobile banking update, the app is stuck in an authentication loop.",
+        "After updating the banking app, biometric login fails and locks my net banking profile.",
+        "The latest mobile banking app update keeps crashing with session token expired error.",
+    ],
 }
 
-
 def spike_definitions(end: date = END_DATE) -> list[dict]:
-    """Ground-truth description of the injected incidents (used by tests and the README)."""
+    """Ground-truth description of the injected incidents (used by tests and analytical anomaly detection)."""
     return [
-        {"name": "billing_incident", "category": "Billing", "start": end - timedelta(days=200),
+        {"name": "overdraft_batch_glitch", "category": "Billing & Fees", "start": end - timedelta(days=200),
          "end": end - timedelta(days=195), "volume_mult": 3.2, "neg_boost": 0.15},
-        {"name": "delivery_incident", "category": "Delivery", "start": end - timedelta(days=95),
+        {"name": "upi_gateway_outage", "category": "Transaction Failure", "start": end - timedelta(days=95),
          "end": end - timedelta(days=90), "volume_mult": 3.5, "neg_boost": 0.15},
-        {"name": "delivery_recent", "category": "Delivery", "start": end - timedelta(days=5),
+        {"name": "fraud_card_skimming", "category": "Unauthorized Fraud", "start": end - timedelta(days=5),
          "end": end, "volume_mult": 3.2, "neg_boost": 0.15},
-        {"name": "app_update", "category": "Technical Support", "start": end - timedelta(days=17),
+        {"name": "app_login_loop", "category": "Account & KYC", "start": end - timedelta(days=17),
          "end": end, "volume_mult": 1.9, "neg_boost": 0.1},
-        {"name": "service_sentiment_drop", "category": "Customer Service", "start": end - timedelta(days=9),
+        {"name": "support_backlog", "category": "Customer Support", "start": end - timedelta(days=9),
          "end": end, "volume_mult": 1.8, "neg_boost": 0.30},
     ]
-
 
 def generate(n_rows: int = 7000, seed: int = 42, end: date = END_DATE, days: int = 365) -> pd.DataFrame:
     rng = np.random.default_rng(seed)
@@ -201,20 +309,24 @@ def generate(n_rows: int = 7000, seed: int = 42, end: date = END_DATE, days: int
                 rest = 1 - pn
                 sent = rng.choice(["negative", "neutral", "positive"], p=[pn, rest * 0.68, rest * 0.32])
                 prod_w = pw.copy()
-                if c in ("Billing", "Refunds"):
-                    prod_w[prods.index("Streaming Subscription")] *= 2.5
-                if c == "Technical Support":
-                    prod_w[prods.index("Home Router")] *= 2.0
-                    prod_w[prods.index("Smart Watch")] *= 1.5
+                if c == "Unauthorized Fraud":
+                    prod_w[prods.index("Credit Card")] *= 2.5
+                    prod_w[prods.index("Debit Card & ATM")] *= 2.0
+                if c == "Transaction Failure":
+                    prod_w[prods.index("UPI & Net Banking")] *= 2.5
+                    prod_w[prods.index("Debit Card & ATM")] *= 2.0
+                if c == "Loan & Mortgage":
+                    prod_w[prods.index("Home Mortgage")] *= 2.5
+                    prod_w[prods.index("Personal Loan")] *= 2.0
                 p = rng.choice(prods, p=prod_w / prod_w.sum())
                 ch = rng.choice(chans, p=cw / cw.sum())
                 if sent == "negative" and rng.random() < 0.2:
-                    ch = "Social Media"
+                    ch = "Ombudsman"
 
                 # core sentence (incident vocabulary replaces it most of the time)
                 core = rng.choice(CORE[c])
                 for s in active:
-                    if s["name"] in SPIKE_TEXT and rng.random() < (0.55 if s["name"] == "app_update" else 0.75):
+                    if s["name"] in SPIKE_TEXT and rng.random() < (0.55 if s["name"] == "app_login_loop" else 0.75):
                         core = rng.choice(SPIKE_TEXT[s["name"]])
                 parts = [core]
                 if rng.random() < 0.10:  # cross-category sentence -> realistic label ambiguity
@@ -227,10 +339,10 @@ def generate(n_rows: int = 7000, seed: int = 42, end: date = END_DATE, days: int
                 if rng.random() < 0.7:
                     closer_sent = sent if rng.random() > 0.10 else rng.choice(["negative", "neutral", "positive"])
                     parts.append(make_closer(rng, closer_sent))
-                text = " ".join(parts).format(p=p.lower(), n=int(rng.integers(1, 9)), c=ch.lower())
+                text = " ".join(parts).format(p=p, n=int(rng.integers(1, 9)), c=ch.lower())
                 rows.append((d, text, p, ch, c, sent))
 
     df = pd.DataFrame(rows, columns=["created_at", "text", "product", "channel", "true_category", "true_sentiment"])
     df = df.sample(frac=1.0, random_state=seed).sort_values("created_at", kind="stable").reset_index(drop=True)
-    df.insert(0, "external_id", [f"SYN-{i + 1:06d}" for i in range(len(df))])
+    df.insert(0, "external_id", [f"BNK-{i + 1:06d}" for i in range(len(df))])
     return df

@@ -9,24 +9,24 @@ const PAGE_SIZES = [10, 25, 50, 100];
 
 const DEMO_PRESETS = [
   {
-    name: "💳 Billing Double-Charge",
-    desc: "March 29 - April 03, 2026: 3.2x spike in Billing complaints",
-    filters: { q: "charged twice", date_from: "2026-03-29", date_to: "2026-04-03", category: "Billing", sentiment: "", channel: "", product: "" },
+    name: "💳 Overdraft / Double-Debit",
+    desc: "March 29 - April 03, 2026: 3.2x spike in Billing & Fee penalties",
+    filters: { q: "penalty", date_from: "2026-03-29", date_to: "2026-04-03", category: "Billing & Fees", sentiment: "", channel: "", product: "" },
   },
   {
-    name: "📱 App 5.2 Login Loop",
-    desc: "Sep 28 - Oct 15, 2026: Tech Support surge with 'token expired' / 'login loop'",
-    filters: { q: "login", date_from: "2026-09-28", date_to: "2026-10-15", category: "Technical Support", sentiment: "", channel: "", product: "" },
+    name: "📱 Mobile App 5.2 Login Loop",
+    desc: "Sep 28 - Oct 15, 2026: Account & KYC surge with 'session expired' / login loop",
+    filters: { q: "login", date_from: "2026-09-28", date_to: "2026-10-15", category: "Account & KYC", sentiment: "", channel: "", product: "" },
   },
   {
-    name: "🚚 Delivery Backlog Surge",
-    desc: "Oct 10 - Oct 15, 2026: Regional carrier delays and warehouse backlog",
-    filters: { q: "", date_from: "2026-10-10", date_to: "2026-10-15", category: "Delivery", sentiment: "", channel: "", product: "" },
+    name: "⚡ UPI & Transaction Outage",
+    desc: "July 12 - July 17, 2026: 3.5x surge in failed UPI transfers & ATM timeouts",
+    filters: { q: "", date_from: "2026-07-12", date_to: "2026-07-17", category: "Transaction Failure", sentiment: "", channel: "", product: "" },
   },
   {
-    name: "😡 Service Sentiment Drop",
-    desc: "Oct 06 - Oct 15, 2026: Customer service surge with high negative sentiment",
-    filters: { q: "", date_from: "2026-10-06", date_to: "2026-10-15", category: "Customer Service", sentiment: "negative", channel: "", product: "" },
+    name: "🚨 ATM Skimming & Fraud",
+    desc: "Oct 10 - Oct 15, 2026: Critical surge in unauthorized debit card withdrawals",
+    filters: { q: "unauthorized", date_from: "2026-10-10", date_to: "2026-10-15", category: "Unauthorized Fraud", sentiment: "negative", channel: "", product: "" },
   },
 ];
 
